@@ -3,193 +3,126 @@
 <meta name="robots" content="noindex, nofollow">
 <title>London · #TangGang</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fff;--ink:#111214;--muted:#5b5e66;--soft:#8a8d95;--line:#e4e4e7;--tint:#f7f7f5;--surface:#fff;
-  --map-ground:#f3f3ef;--park:#dfe9d8;--river:#bcd3e6;
-  --home:#111214;--wed:#b3261e;--thu:#1f7a45;--fri:#a86400;--sat:#2456a6;--sun:#7a3b9c;
+:root{--bg:#fff;--ink:#282828;--muted:#676767;--soft:#9a9a9a;--line:#e9e9e9;--tint:#f4f4f4;--surface:#fff;--r:14px;
+  --home:#282828;--wed:#b3261e;--thu:#1f7a45;--fri:#a86400;--sat:#2456a6;--sun:#7a3b9c;
   --wine:#6b1d2b;--green:#2f5d3a;--navy:#1f2f5c;--black:#151516;--purple:#5b3a6e;--pastel:#b9c6d8;--other:#8a7f78}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Source Serif 4",Georgia,"Iowan Old Style",serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
 a{color:inherit}
-.crest{text-align:center;padding:38px 16px 0}
-.crest .name{display:block;font-size:clamp(34px,6vw,58px);font-weight:900;letter-spacing:-.04em;line-height:1;text-decoration:none}
-.crest .sub{display:block;margin-top:10px;font-size:11.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--soft)}
-nav.top{display:flex;justify-content:center;gap:6px;margin:26px auto 0;padding:0 16px 0;border-bottom:1px solid var(--ink)}
-nav.top a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:10px 16px 12px;margin-bottom:-1px;border-bottom:3px solid transparent;color:var(--muted)}
+.sans{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif}
+.mono{font-family:"Chakra Petch",ui-monospace,monospace}
+/* header: nav row top-right, wordmark centred, compact */
+nav.top{display:flex;justify-content:flex-end;gap:26px;padding:14px 28px 0;font-family:"Chakra Petch",sans-serif;font-weight:500;font-size:15px;letter-spacing:.1em}
+nav.top a{text-decoration:none;color:var(--muted);padding:2px 0;border-bottom:1.5px solid transparent}
 nav.top a:hover{color:var(--ink)}
 nav.top a.on{color:var(--ink);border-bottom-color:var(--ink)}
-.wrap{max-width:1180px;margin:0 auto;padding:36px 16px 70px}
-.narrow{max-width:980px}
-h1{font-size:clamp(30px,4.4vw,48px);line-height:1.02;letter-spacing:-.03em;margin:0 0 12px;text-wrap:balance}
-.lede{font-size:17px;color:var(--muted);max-width:72ch;margin:0 0 20px}
-h2{font-size:22px;letter-spacing:-.015em;margin:40px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--ink)}
-.kicker{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--soft);margin:0 0 8px}
-footer.site{border-top:1px solid var(--line);margin-top:30px;padding:18px 16px 50px;text-align:center;color:var(--soft);font-size:12.5px}
-footer.site b{color:var(--ink)}
+.crest{text-align:center;padding:4px 16px 0}
+.crest .name{display:inline-block;font-family:"Chakra Petch",sans-serif;font-weight:500;font-size:clamp(28px,4.6vw,46px);letter-spacing:.18em;text-transform:uppercase;line-height:1;text-decoration:none;
+  background:linear-gradient(100deg,#8c8c8c 0%,#c4c4c4 45%,#8a8a8a 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.crest .sub{display:inline-flex;align-items:center;gap:8px;margin:8px auto 0;font-family:"Chakra Petch",sans-serif;font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);background:var(--tint);border-radius:999px;padding:4px 12px}
+.wrap{max-width:1120px;margin:0 auto;padding:22px 20px 60px}
+.narrow{max-width:800px}
+h1{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;font-size:clamp(28px,3.4vw,38px);line-height:1.15;letter-spacing:-.01em;margin:0 0 10px;text-wrap:balance}
+.lede{font-size:17px;color:var(--ink);max-width:66ch;margin:0 0 14px}
+h2{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;font-size:24px;letter-spacing:-.01em;margin:36px 0 10px;padding:0;border:0}
+.kicker{font-family:"Chakra Petch",sans-serif;font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin:0 0 6px}
+footer.site{margin-top:30px;padding:18px 16px 44px;text-align:center;color:var(--soft);font-size:13.5px}
+footer.site b{color:var(--muted);font-family:"Chakra Petch",sans-serif;letter-spacing:.1em;text-transform:uppercase;font-weight:500}
 /* cover */
-.cover{max-width:980px;margin:0 auto;padding:50px 16px 70px}
-.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:28px}
-.tile{display:block;text-decoration:none;border:1px solid var(--ink);padding:26px 24px 24px;position:relative;min-height:220px;transition:background .15s}
-.tile:hover{background:var(--ink);color:var(--bg)}
-.tile .k{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;opacity:.6}
-.tile h2{border:0;margin:10px 0 8px;font-size:34px;letter-spacing:-.03em;padding:0}
-.tile p{margin:0;opacity:.75;max-width:40ch}
-.tile .go{position:absolute;right:22px;bottom:18px;font-size:22px}
+.cover{max-width:800px;margin:0 auto;padding:26px 20px 60px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:22px}
+.tile{display:block;text-decoration:none;background:var(--tint);border-radius:var(--r);padding:22px 22px 20px;position:relative;min-height:190px;transition:background .15s}
+.tile:hover{background:#ebebeb}
+.tile .k{font-family:"Chakra Petch",sans-serif;font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--soft)}
+.tile h2{margin:8px 0 6px;font-size:30px}
+.tile p{margin:0;color:var(--muted);max-width:40ch;font-size:16px}
+.tile .go{position:absolute;right:20px;bottom:14px;font-size:22px;color:var(--muted)}
 /* rule cards + filters (outfits) */
-.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:22px 0 0}
-.rulecard{background:var(--tint);border:1px solid var(--line);padding:14px 16px}
-.rulecard b{display:block;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin-bottom:5px}
-.rulecard p{margin:0;font-size:14.5px}
-.filters{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 8px;position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:5;border-bottom:1px solid var(--line)}
-.fbtn{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:6px 13px;font:inherit;font-size:13px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
-.fbtn i{width:11px;height:11px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.12)}
-.fbtn.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.subhead{font-size:22px;letter-spacing:-.015em;margin:36px 0 4px;padding-bottom:6px;border-bottom:1px solid var(--ink)}
-.sub{color:var(--muted);margin:0 0 16px;font-size:14px}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:14px 0 0}
+.rulecard{background:var(--tint);border-radius:var(--r);padding:14px 16px}
+.rulecard b{display:block;font-family:"Chakra Petch",sans-serif;font-weight:500;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin-bottom:5px}
+.rulecard p{margin:0;font-size:15.5px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 4px;position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:5}
+.fbtn{border:0;background:var(--tint);color:var(--ink);border-radius:999px;padding:7px 14px;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13.5px;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
+.fbtn i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.fbtn.on{background:var(--ink);color:var(--bg)}
+.subhead{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;font-size:24px;margin:34px 0 2px;padding:0;border:0}
+.sub{color:var(--muted);margin:0 0 14px;font-size:15.5px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px 18px}
 @media (max-width:1000px){.grid{grid-template-columns:repeat(3,1fr)}}
-@media (max-width:640px){.grid{grid-template-columns:repeat(2,1fr);gap:12px}}
-.dcard{display:flex;flex-direction:column;border:1px solid var(--line);background:var(--surface);break-inside:avoid}
-.dcard .shot{display:block;aspect-ratio:3/4;overflow:hidden;background:var(--tint)}
+@media (max-width:640px){.grid{grid-template-columns:repeat(2,1fr);gap:16px 12px}}
+.dcard{display:flex;flex-direction:column;break-inside:avoid}
+.dcard .shot{display:block;aspect-ratio:3/4;overflow:hidden;background:var(--tint);border-radius:var(--r)}
 .dcard img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .3s}
 .dcard:hover img{transform:scale(1.02)}
-.in{padding:12px 13px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
-.top{display:flex;align-items:center;gap:8px}
-.num{font-size:12px;color:var(--soft);font-weight:700;font-variant-numeric:tabular-nums}
-.swatch{width:13px;height:13px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.15)}
-.price{margin-left:auto;font-weight:700}
-.dcard h3{margin:0;font-size:16px;line-height:1.25;letter-spacing:-.01em}
+.in{padding:10px 2px 0;display:flex;flex-direction:column;gap:5px;flex:1}
+.top{display:flex;align-items:center;gap:8px;font-family:"Chakra Petch",sans-serif}
+.num{font-size:12px;color:var(--soft);letter-spacing:.08em}
+.swatch{width:12px;height:12px;border-radius:50%;display:inline-block}
+.price{margin-left:auto;font-size:14px;color:var(--muted);letter-spacing:.04em}
+.dcard h3{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:500;font-size:16px;line-height:1.3}
 .dcard h3 a{text-decoration:none}.dcard h3 a:hover{text-decoration:underline}
-.brand{margin:0;color:var(--muted);font-size:13px}
+.brand{margin:0;color:var(--muted);font-size:14px}
 .tags{display:flex;flex-wrap:wrap;gap:5px}
-.tag{font-size:11px;border:1px solid var(--line);padding:2px 7px;color:var(--muted);letter-spacing:.02em}
-.note{margin:2px 0 0;font-size:13.5px;font-style:italic}
-.link{margin-top:auto;padding-top:8px;font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
-.link:hover{text-decoration:underline}
-.notes ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
-.notes li{margin:5px 0}
-.notes li b{color:var(--ink)}
+.tag{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:11.5px;background:var(--tint);border-radius:999px;padding:3px 9px;color:var(--muted)}
+.note{margin:2px 0 0;font-size:15px;font-style:italic}
+.link{margin-top:auto;padding-top:6px;font-family:"Chakra Petch",sans-serif;font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+.link:hover{color:var(--ink)}
+.notes ul{margin:8px 0 0;padding-left:20px;color:var(--muted)}
+.notes li{margin:6px 0}
+.notes li b{color:var(--ink);font-weight:600}
 /* london */
-.cats{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px}
-.cat{font-size:12px;font-weight:600;border:1px solid var(--line);padding:3px 10px;border-radius:999px;color:var(--muted)}
-.mapbox{border:1px solid var(--line);padding:10px;background:var(--surface)}
-.mapbox svg{display:block;width:100%;height:auto;max-height:78vh}
-.mapbox .area{font-size:13px;fill:var(--soft);text-anchor:middle;font-style:italic}
-.mapbox .river{fill:var(--sat);opacity:.7}
-.mapbox .hood{font-size:11px;letter-spacing:.14em;fill:var(--soft);text-anchor:middle;font-weight:700;opacity:.8}
-.mapbox .num{font-size:11px;font-weight:700;fill:var(--surface);text-anchor:middle}
-.mapbox .lbl{font-size:12.5px;font-weight:600;fill:var(--ink);paint-order:stroke;stroke:var(--map-ground);stroke-width:3.5px}
-.mapbox .sub{font-size:11px;fill:var(--muted);margin:0}
-.mapbox .ring{font-size:11px;fill:var(--soft);font-weight:700}
-.radial{max-width:720px;margin:0 auto}
-.pin{cursor:pointer}.pin:focus-visible circle{stroke:var(--ink);stroke-width:3}
-svg.filtered .pin,svg.filtered .pin-fri,svg.filtered .pin-thu,svg.filtered .pin-sat{opacity:.14}
-svg.filtered.f-wed .pin-wed,svg.filtered.f-thu .pin-thu,svg.filtered.f-fri .pin-fri,svg.filtered.f-sat .pin-sat,svg.filtered.f-sun .pin-sun,svg.filtered .pin-home{opacity:1}
-.legend{display:flex;flex-wrap:wrap;gap:8px;margin:10px 2px 2px}
-.legend button{font:inherit;font-size:12.5px;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 11px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
-.legend button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.legend .dot{width:10px;height:10px;border-radius:50%;display:inline-block}
-.maphint{font-size:12.5px;color:var(--muted);margin:8px 2px 0}
-.day{border:1px solid var(--line);margin-top:14px;background:var(--surface)}
-.dayhead{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding:14px 16px 10px;border-bottom:1px solid var(--line)}
-.daytag{color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px}
-.dayhead h3{margin:0;font-size:19px;letter-spacing:-.015em}
-.theme{color:var(--soft);font-size:13px;margin-left:auto}
-.slots{padding:6px 16px 10px}
-.slot{display:grid;grid-template-columns:62px 1fr;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line)}
-.slot:last-child{border-bottom:0}
-.slot .t{font-weight:700;font-variant-numeric:tabular-nums;color:var(--muted);font-size:13.5px;padding-top:2px}
+.cats{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.cat{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12.5px;background:var(--tint);padding:4px 11px;border-radius:999px;color:var(--muted)}
+.mapbox{border-radius:var(--r);overflow:hidden;background:var(--tint);margin-top:16px}
+.mapbox iframe{display:block;width:100%;height:440px;border:0}
+.maphint{font-size:14px;color:var(--muted);margin:8px 2px 0}
+.day{background:var(--tint);border-radius:var(--r);margin-top:14px}
+.dayhead{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding:16px 18px 8px}
+.daytag{font-family:"Chakra Petch",sans-serif;color:#fff;font-size:11.5px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;padding:3px 9px;border-radius:999px}
+.dayhead h3{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;font-size:21px}
+.theme{color:var(--soft);font-size:14px;margin-left:auto;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif}
+.slots{padding:4px 18px 12px}
+.slot{display:grid;grid-template-columns:58px 1fr;gap:12px;padding:9px 0;border-top:1px solid #e4e4e4}
+.slot:first-child{border-top:0}
+.slot .t{font-family:"Chakra Petch",sans-serif;font-weight:500;color:var(--muted);font-size:13.5px;padding-top:3px;letter-spacing:.04em}
 .slot p{margin:0}
-.slot .n{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;color:#fff;font-size:10.5px;font-weight:700;margin-right:6px;vertical-align:1px}
-.slot .tag{display:inline-block;margin-left:8px;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--line);padding:1px 6px;color:var(--soft)}
-.free{color:var(--thu);font-weight:700}
-.book{color:var(--wed);font-weight:700}
-.sunset{text-align:center;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);padding:8px 0 2px}
-.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
-.card{border:1px solid var(--line);padding:14px 16px;background:var(--surface)}
-.card h4{margin:0 0 2px;font-size:16px;letter-spacing:-.01em}
-.card .meta{font-size:12px;color:var(--soft);margin-bottom:8px;letter-spacing:.04em;text-transform:uppercase;font-weight:600}
-.card p{margin:6px 0 0;font-size:14px;color:var(--muted)}
+.slot .n{display:none}
+.slot .tag{display:inline-block;margin-left:8px;font-family:"Chakra Petch",sans-serif;font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;background:#fff;padding:2px 8px;border-radius:999px;color:var(--soft)}
+.free{color:var(--thu);font-weight:600}
+.book{color:var(--wed);font-weight:600}
+.sunset{text-align:center;font-family:"Chakra Petch",sans-serif;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);padding:8px 0 2px}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.card{background:var(--tint);border-radius:var(--r);padding:16px 18px}
+.card h4{margin:0 0 2px;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:500;font-size:16px}
+.card .meta{font-family:"Chakra Petch",sans-serif;font-size:11.5px;color:var(--soft);margin-bottom:8px;letter-spacing:.1em;text-transform:uppercase}
+.card p{margin:6px 0 0;font-size:15px;color:var(--muted)}
 .card p b,.card p i{color:var(--ink)}
-.tbl{overflow-x:auto}
-table{border-collapse:collapse;width:100%;font-size:14px}
-th{text-align:left;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);font-weight:700;padding:8px 10px;border-bottom:1px solid var(--ink)}
-td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-.foot{font-size:13px;color:var(--muted)}
+.tbl{overflow-x:auto;background:var(--tint);border-radius:var(--r);padding:6px 14px}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th{text-align:left;font-family:"Chakra Petch",sans-serif;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);font-weight:500;padding:10px 8px;border-bottom:1px solid #e0e0e0}
+td{padding:10px 8px;border-bottom:1px solid #e4e4e4;vertical-align:top}
+tr:last-child td{border-bottom:0}
+.foot{font-size:14px;color:var(--muted)}
 .foot a{color:var(--muted)}
-@media print{nav.top,.filters,.legend{display:none}.wrap{padding:0}.grid{grid-template-columns:repeat(4,1fr);gap:8px}.dcard{page-break-inside:avoid}.link{display:none}a{color:inherit;text-decoration:none}}
+@media (max-width:640px){nav.top{justify-content:center;gap:18px;padding:12px 12px 0;font-size:13.5px}.mapbox iframe{height:320px}}
+@media print{nav.top,.filters{display:none}.wrap{padding:0}.grid{grid-template-columns:repeat(4,1fr);gap:8px}.dcard{page-break-inside:avoid}.link{display:none}a{color:inherit;text-decoration:none}}
 </style></head><body>
-<header class="crest"><a class="name" href="index.html">#TangGang</a><span class="sub">Sam + Jenni · 3.20.27</span></header>
 <nav class="top"><a href="index.html">Home</a><a href="london.html" class="on">London</a><a href="outfits.html">Outfits</a></nav>
+<header class="crest"><a class="name" href="index.html">#TangGang</a><br><span class="sub">Sam + Jenni · 3.20.27</span></header>
 <main class="wrap narrow">
 <div class="pagehead">
   <div class="kicker">London &middot; Wed 13 &ndash; Mon 18 January 2027 &middot; Ham Yard Hotel, Soho</div>
   <h1>London, in January</h1>
-  <p class="lede">Five nights, four of you, built around what January actually allows: light from about 8:00 to 4:20, so the outdoor things happen early and the city takes over after dark. No sit-down lunches or breakfasts &mdash; grab something on the move and spend the daylight on the good stuff. Every stop is on the map, numbered and coloured by day. Tap a pin to open it in Google Maps.</p>
+  <p class="lede">Five nights, four of you, built around what January actually allows: light from about 8:00 to 4:20, so the outdoor things happen early and the city takes over after dark. No sit-down lunches or breakfasts &mdash; grab something on the move and spend the daylight on the good stuff.</p>
   <div class="cats"><span class="cat">Shopping</span><span class="cat">Art</span><span class="cat">Sculpture</span><span class="cat">Bars</span><span class="cat">Two fancy dinners</span><span class="cat">Spa</span><span class="cat">Two day trips</span></div>
 </div>
 
-<section>
-  <div class="mapbox">
-    <svg viewBox="0 0 981 948" role="img" aria-label="Map of central London with every stop numbered by day">
-<rect x="0" y="0" width="981" height="948" rx="14" fill="var(--map-ground)"/>
-<ellipse cx="322.6" cy="154.0" rx="99.5" ry="85.0" fill="var(--park)"/>
-<text x="323" y="154" class="area">Hampstead Heath</text>
-<ellipse cx="378.6" cy="509.0" rx="65.3" ry="60.0" fill="var(--park)"/>
-<text x="379" y="509" class="area">Regent's Park</text>
-<ellipse cx="297.7" cy="709.0" rx="112.0" ry="45.0" fill="var(--park)"/>
-<text x="298" y="709" class="area">Hyde Park</text>
-<ellipse cx="503.0" cy="754.0" rx="37.3" ry="22.0" fill="var(--park)"/>
-<polyline points="5.3,1084.0 160.9,1004.0 285.3,964.0 409.7,944.0 503.0,924.0 574.6,879.0 577.7,824.0 590.1,754.0 602.6,704.0 658.5,679.0 720.8,689.0 783.0,699.0 857.6,719.0 969.6,714.0" fill="none" stroke="var(--river)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="733" y="789" class="area river">River Thames</text>
-<text x="512" y="644" class="hood">SOHO</text>
-<text x="397" y="594" class="hood">MARYLEBONE</text>
-<text x="105" y="656" class="hood">NOTTING HILL</text>
-<text x="820" y="474" class="hood">SHOREDITCH</text>
-<text x="771" y="624" class="hood">THE CITY</text>
-<text x="422" y="654" class="hood">MAYFAIR</text>
-<line x1="558" y1="432" x2="708" y2="242" stroke="var(--fri)" stroke-width="2" stroke-dasharray="5 5" class="pin-fri"/>
-<g class="pin-fri"><rect x="658" y="200" width="170" height="40" rx="10" fill="var(--surface)" stroke="var(--fri)"/><text x="672" y="217" class="lbl">To Cambridge</text><text x="672" y="232" class="sub">50 min by train · Fri</text></g>
-<line x1="316" y1="229" x2="221" y2="349" stroke="var(--thu)" stroke-width="2" stroke-dasharray="5 5" class="pin-thu"/>
-<g class="pin-thu"><rect x="54" y="339" width="190" height="40" rx="10" fill="var(--surface)" stroke="var(--thu)"/><circle cx="70" cy="359" r="10" fill="var(--thu)"/><text x="70" y="363" class="num">26</text><text x="86" y="356" class="lbl">To Kew · Henry Moore</text><text x="86" y="371" class="sub">40 min Overground · Thu</text></g>
-<line x1="242" y1="617" x2="202" y2="767" stroke="var(--sat)" stroke-width="2" stroke-dasharray="5 5" class="pin-sat"/>
-<g class="pin-sat"><rect x="122" y="767" width="210" height="40" rx="10" fill="var(--surface)" stroke="var(--sat)"/><text x="136" y="784" class="lbl">To Bath &amp; the Cotswolds</text><text x="136" y="799" class="sub">1h20 by train · Sat</text></g>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Ham+Yard+Hotel%2C+London" target="_blank" rel="noopener" class="pin pin-home"><title>Ham Yard Hotel</title><circle cx="503.0" cy="675.0" r="12" fill="var(--home)" stroke="var(--surface)" stroke-width="2"/><text x="503.0" y="678.6" class="num">H</text><text x="513.0" y="667.0" text-anchor="start" class="lbl">Ham Yard Hotel</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Dover+Street+Market+Haymarket%2C+London" target="_blank" rel="noopener" class="pin pin-wed"><title>Dover Street Market</title><circle cx="524.2" cy="693.0" r="10" fill="var(--wed)" stroke="var(--surface)" stroke-width="2"/><text x="524.2" y="696.6" class="num">2</text><text x="534.2" y="707.0" text-anchor="start" class="lbl">Dover Street Market</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Liberty+London%2C+London" target="_blank" rel="noopener" class="pin pin-wed"><title>Liberty</title><circle cx="470.7" cy="643.0" r="10" fill="var(--wed)" stroke="var(--surface)" stroke-width="2"/><text x="470.7" y="646.6" class="num">3</text><text x="460.7" y="633.0" text-anchor="end" class="lbl">Liberty</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Sir+John+Soane%27s+Museum%2C+London" target="_blank" rel="noopener" class="pin pin-wed"><title>Sir John Soane&#x27;s Museum</title><circle cx="611.9" cy="614.0" r="10" fill="var(--wed)" stroke="var(--surface)" stroke-width="2"/><text x="611.9" y="617.6" class="num">4</text><text x="621.9" y="608.0" text-anchor="start" class="lbl">Sir John Soane&#x27;s Museum</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Corinthia+London%2C+London" target="_blank" rel="noopener" class="pin pin-wed"><title>Biome spa, Corinthia</title><circle cx="569.6" cy="721.0" r="10" fill="var(--wed)" stroke="var(--surface)" stroke-width="2"/><text x="569.6" y="724.6" class="num">5</text><text x="579.6" y="733.0" text-anchor="start" class="lbl">Biome spa</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Parliament+Hill%2C+London" target="_blank" rel="noopener" class="pin pin-thu"><title>Parliament Hill</title><circle cx="347.5" cy="188.0" r="10" fill="var(--thu)" stroke="var(--surface)" stroke-width="2"/><text x="347.5" y="191.6" class="num">6</text><text x="357.5" y="192.0" text-anchor="start" class="lbl">Parliament Hill</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Kenwood+House%2C+London" target="_blank" rel="noopener" class="pin pin-thu"><title>Kenwood House</title><circle cx="300.2" cy="71.0" r="10" fill="var(--thu)" stroke="var(--surface)" stroke-width="2"/><text x="300.2" y="74.6" class="num">7</text><text x="310.2" y="75.0" text-anchor="start" class="lbl">Kenwood House</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=MOI+Wardour+Street+Soho%2C+London" target="_blank" rel="noopener" class="pin pin-thu"><title>MOI</title><circle cx="515.5" cy="646.0" r="10" fill="var(--thu)" stroke="var(--surface)" stroke-width="2"/><text x="515.5" y="649.6" class="num">10</text><text x="525.5" y="638.0" text-anchor="start" class="lbl">MOI</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Coal+Drops+Yard%2C+London" target="_blank" rel="noopener" class="pin pin-fri"><title>King&#x27;s Cross &amp; Coal Drops Yard</title><circle cx="557.8" cy="432.0" r="10" fill="var(--fri)" stroke="var(--surface)" stroke-width="2"/><text x="557.8" y="435.6" class="num">11</text><text x="567.8" y="436.0" text-anchor="start" class="lbl">King&#x27;s Cross &amp; Coal Drops Yard</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Dennis+Severs%27+House%2C+London" target="_blank" rel="noopener" class="pin pin-fri"><title>Dennis Severs&#x27; House</title><circle cx="855.1" cy="581.0" r="10" fill="var(--fri)" stroke="var(--surface)" stroke-width="2"/><text x="855.1" y="584.6" class="num">12</text><text x="845.1" y="599.0" text-anchor="end" class="lbl">Dennis Severs&#x27; House</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Tate+Modern%2C+London" target="_blank" rel="noopener" class="pin pin-sun"><title>Tate Modern</title><circle cx="724.5" cy="708.0" r="10" fill="var(--sun)" stroke="var(--surface)" stroke-width="2"/><text x="724.5" y="711.6" class="num">13</text><text x="714.5" y="698.0" text-anchor="end" class="lbl">Tate Modern</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Tate+Britain%2C+London" target="_blank" rel="noopener" class="pin pin-sun"><title>Tate Britain</title><circle cx="549.7" cy="873.0" r="10" fill="var(--sun)" stroke="var(--surface)" stroke-width="2"/><text x="549.7" y="876.6" class="num">15</text><text x="559.7" y="877.0" text-anchor="start" class="lbl">Tate Britain</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=The+Connaught+Bar%2C+London" target="_blank" rel="noopener" class="pin pin-sat"><title>The Connaught Bar</title><circle cx="410.9" cy="684.0" r="10" fill="var(--sat)" stroke="var(--surface)" stroke-width="2"/><text x="410.9" y="687.6" class="num">16</text><text x="400.9" y="698.0" text-anchor="end" class="lbl">The Connaught Bar</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Ambassadors+Clubhouse+Heddon+Street%2C+London" target="_blank" rel="noopener" class="pin pin-sat"><title>Ambassadors Clubhouse</title><circle cx="475.0" cy="671.0" r="10" fill="var(--sat)" stroke="var(--surface)" stroke-width="2"/><text x="475.0" y="674.6" class="num">17</text><text x="485.0" y="685.0" text-anchor="start" class="lbl">Ambassadors Clubhouse</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Columbia+Road+Flower+Market%2C+London" target="_blank" rel="noopener" class="pin pin-sun"><title>Columbia Road Flower Market</title><circle cx="903.0" cy="490.0" r="10" fill="var(--sun)" stroke="var(--surface)" stroke-width="2"/><text x="903.0" y="493.6" class="num">18</text><text x="893.0" y="480.0" text-anchor="end" class="lbl">Columbia Road Flower Market</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Blacklock+Shoreditch%2C+London" target="_blank" rel="noopener" class="pin pin-sun"><title>Blacklock Shoreditch</title><circle cx="840.2" cy="523.0" r="10" fill="var(--sun)" stroke="var(--surface)" stroke-width="2"/><text x="840.2" y="526.6" class="num">19</text><text x="850.2" y="539.0" text-anchor="start" class="lbl">Blacklock Shoreditch</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Barbican+Centre%2C+London" target="_blank" rel="noopener" class="pin pin-sun"><title>The Barbican</title><circle cx="759.9" cy="582.0" r="10" fill="var(--sun)" stroke="var(--surface)" stroke-width="2"/><text x="759.9" y="585.6" class="num">20</text><text x="749.9" y="598.0" text-anchor="end" class="lbl">The Barbican</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Zephyr+Notting+Hill%2C+London" target="_blank" rel="noopener" class="pin pin-wed"><title>zēphyr</title><circle cx="95.5" cy="634.0" r="10" fill="var(--wed)" stroke="var(--surface)" stroke-width="2"/><text x="95.5" y="637.6" class="num">22</text><text x="85.5" y="626.0" text-anchor="end" class="lbl">zēphyr</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=nina+Thayer+Street+Marylebone%2C+London" target="_blank" rel="noopener" class="pin pin-fri"><title>nina</title><circle cx="399.8" cy="606.0" r="10" fill="var(--fri)" stroke="var(--surface)" stroke-width="2"/><text x="399.8" y="609.6" class="num">23</text><text x="409.8" y="598.0" text-anchor="start" class="lbl">nina</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=London+Paddington+station%2C+London" target="_blank" rel="noopener" class="pin pin-sat"><title>Paddington</title><circle cx="242.4" cy="617.0" r="10" fill="var(--sat)" stroke="var(--surface)" stroke-width="2"/><text x="242.4" y="620.6" class="num">27</text><text x="252.4" y="609.0" text-anchor="start" class="lbl">Paddington</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=The+Lore+of+the+Land+Fitzrovia%2C+London" target="_blank" rel="noopener" class="pin pin-thu"><title>Lore of the Land</title><circle cx="490.6" cy="594.0" r="10" fill="var(--thu)" stroke="var(--surface)" stroke-width="2"/><text x="490.6" y="597.6" class="num">25</text><text x="500.6" y="586.0" text-anchor="start" class="lbl">Lore of the Land</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Scarfes+Bar+Rosewood+London%2C+London" target="_blank" rel="noopener" class="pin pin-sun"><title>Scarfes Bar, Rosewood</title><circle cx="588.9" cy="604.0" r="10" fill="var(--sun)" stroke="var(--surface)" stroke-width="2"/><text x="588.9" y="607.6" class="num">21</text><text x="578.9" y="620.0" text-anchor="end" class="lbl">Scarfes Bar</text></a>
-</svg>
-    <div class="legend" role="group" aria-label="Show one day on the map">
-      <button type="button" id="f-all" data-day="all" aria-pressed="true"><span class="dot" style="background:var(--home)"></span>All days</button>
-      <button type="button" id="f-wed" data-day="wed" aria-pressed="false"><span class="dot" style="background:var(--wed)"></span>Wed 13</button>
-      <button type="button" id="f-thu" data-day="thu" aria-pressed="false"><span class="dot" style="background:var(--thu)"></span>Thu 14</button>
-      <button type="button" id="f-fri" data-day="fri" aria-pressed="false"><span class="dot" style="background:var(--fri)"></span>Fri 15</button>
-      <button type="button" id="f-sat" data-day="sat" aria-pressed="false"><span class="dot" style="background:var(--sat)"></span>Sat 16</button>
-      <button type="button" id="f-sun" data-day="sun" aria-pressed="false"><span class="dot" style="background:var(--sun)"></span>Sun 17</button>
-    </div>
-    <p class="maphint">H is the hotel. Kenwood sits 25 minutes north by car; z&#275;phyr is 20 minutes west. Kew (Thu) and Bath (Sat) are off the edge &mdash; the dashed arrows show where you leave from.</p>
-  </div>
-</section>
+<section><div class="mapbox"><iframe src="https://www.google.com/maps?q=Ham+Yard+Hotel,+1+Ham+Yard,+London&z=13&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of London centred on Ham Yard Hotel"></iframe></div>
+<p class="maphint">Centred on Ham Yard. Every stop below is named exactly as it appears in Google Maps — search it, or use the saved list.</p></section>
 
 <h2>Day by day</h2>
 
@@ -276,59 +209,7 @@ td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
 </div>
 
 <h2>Further out &mdash; up to three hours</h2>
-<p class="lede" style="margin-bottom:12px">Every realistic day trip, drawn by how long it actually takes to get there. Two are now in the plan &mdash; <b>Cambridge on Friday</b> and <b>Bath + the Cotswolds on Saturday</b>. The rest are swaps, or a solo day while the others take it slow in Soho.</p>
-<div class="mapbox"><div class="radial"><svg viewBox="0 0 720 600" role="img" aria-label="Travel times from London to each day-trip option, drawn as distance from the centre">
-<rect width="720" height="600" rx="14" fill="var(--map-ground)"/>
-<circle cx="360" cy="300" r="90" fill="none" stroke="var(--line)" stroke-dasharray="4 5"/>
-<text x="427.63" y="232.37" class="ring">1h</text>
-<circle cx="360" cy="300" r="180" fill="none" stroke="var(--line)" stroke-dasharray="4 5"/>
-<text x="491.26" y="168.74" class="ring">2h</text>
-<circle cx="360" cy="300" r="270" fill="none" stroke="var(--line)" stroke-dasharray="none"/>
-<text x="554.89" y="105.11000000000001" class="ring">3h</text>
-<circle cx="360" cy="300" r="9" fill="var(--home)"/><text x="360" y="325" class="lbl" text-anchor="middle">London</text>
-<line x1="360" y1="300" x2="384" y2="227" stroke="var(--sat)" stroke-width="1.5" opacity=".55"/>
-<circle cx="384" cy="227" r="7" fill="var(--sat)" stroke="var(--sat)" stroke-width="2"/>
-<text x="395" y="225" text-anchor="start" class="lbl">Cambridge</text>
-<text x="395" y="239" text-anchor="start" class="sub">51 min · Fri · Kettle&#x27;s Yard</text>
-<line x1="360" y1="300" x2="277" y2="266" stroke="var(--fri)" stroke-width="1.5" opacity=".55"/>
-<circle cx="277" cy="266" r="7" fill="var(--fri)" stroke="var(--fri)" stroke-width="2"/>
-<text x="266" y="264" text-anchor="end" class="lbl">Oxford</text>
-<text x="266" y="278" text-anchor="end" class="sub">1h00 · Ashmolean</text>
-<line x1="360" y1="300" x2="239" y2="308" stroke="var(--sat)" stroke-width="1.5" opacity=".55"/>
-<circle cx="239" cy="308" r="7" fill="var(--sat)" stroke="var(--sat)" stroke-width="2"/>
-<text x="228" y="306" text-anchor="end" class="lbl">Bath</text>
-<text x="228" y="320" text-anchor="end" class="sub">1h21 · Sat · Thermae spa</text>
-<line x1="360" y1="300" x2="198" y2="294" stroke="var(--sat)" stroke-width="1.5" opacity=".55"/>
-<circle cx="198" cy="294" r="7" fill="var(--sat)" stroke="var(--sat)" stroke-width="2"/>
-<text x="187" y="292" text-anchor="end" class="lbl">Castle Combe</text>
-<text x="187" y="306" text-anchor="end" class="sub">1h48 · via Bath · Sat</text>
-<line x1="360" y1="300" x2="378" y2="429" stroke="var(--fri)" stroke-width="1.5" opacity=".55"/>
-<circle cx="378" cy="429" r="7" fill="var(--fri)" stroke="var(--fri)" stroke-width="2"/>
-<text x="389" y="427" text-anchor="start" class="lbl">Charleston</text>
-<text x="389" y="441" text-anchor="start" class="sub">1h27 · Bloomsbury house</text>
-<line x1="360" y1="300" x2="494" y2="314" stroke="var(--fri)" stroke-width="1.5" opacity=".55"/>
-<circle cx="494" cy="314" r="7" fill="var(--fri)" stroke="var(--fri)" stroke-width="2"/>
-<text x="505" y="312" text-anchor="start" class="lbl">Margate</text>
-<text x="505" y="326" text-anchor="start" class="sub">1h30 · Turner Contemporary</text>
-<line x1="360" y1="300" x2="222" y2="393" stroke="var(--fri)" stroke-width="1.5" opacity=".55"/>
-<circle cx="222" cy="393" r="7" fill="var(--fri)" stroke="var(--fri)" stroke-width="2"/>
-<text x="211" y="391" text-anchor="end" class="lbl">Roche Court</text>
-<text x="211" y="405" text-anchor="end" class="sub">1h51 · Sculpture park</text>
-<line x1="360" y1="300" x2="159" y2="350" stroke="var(--soft)" stroke-width="1.5" opacity=".55"/>
-<circle cx="159" cy="350" r="7" fill="var(--soft)" stroke="var(--soft)" stroke-width="2"/>
-<text x="148" y="348" text-anchor="end" class="lbl">Bruton</text>
-<text x="148" y="362" text-anchor="end" class="sub">2h18 · Hauser &amp; Wirth</text>
-<line x1="360" y1="300" x2="331" y2="91" stroke="var(--fri)" stroke-width="1.5" opacity=".55"/>
-<circle cx="331" cy="91" r="7" fill="var(--fri)" stroke="var(--fri)" stroke-width="2"/>
-<text x="320" y="89" text-anchor="end" class="lbl">Yorkshire Sculpture Park</text>
-<text x="320" y="103" text-anchor="end" class="sub">2h21 · + Hepworth Wakefield</text>
-<line x1="360" y1="300" x2="337" y2="213" stroke="var(--soft)" stroke-width="1.5" opacity=".55"/>
-<circle cx="337" cy="213" r="7" fill="var(--surface)" stroke="var(--soft)" stroke-width="2"/>
-<text x="326" y="211" text-anchor="end" class="lbl">Perry Green</text>
-<text x="326" y="225" text-anchor="end" class="sub">1h00 · Moore studios · shut till Apr</text>
-<text x="18" y="582" class="sub">Distance from centre = door-to-door travel time. Blue = in the plan. Hollow = closed in January. St Ives is off the chart at 5h+.</text>
-</svg></div></div>
-
+<p class="lede" style="margin-bottom:12px">Every realistic day trip, ranked by how long it actually takes to get there. Two are now in the plan &mdash; <b>Cambridge on Friday</b> and <b>Bath + the Cotswolds on Saturday</b>. The rest are swaps, or a solo day while the others take it slow in Soho.</p>
 <div class="cgrid" style="margin-top:14px">
   <div class="card" style="border-color:var(--sat)"><h4>Bath + Castle Combe + Lacock &mdash; in the plan, Saturday</h4><div class="meta">1h19 from Paddington &middot; villages + spa + architecture</div>
     <p><b>Thermae Bath Spa</b> has an <b>open-air rooftop pool of naturally hot spring water</b> looking over the abbey &mdash; steaming in January air, which is the whole point. Open daily 9:00&ndash;21:30, over-16s, book a slot.</p>
@@ -381,9 +262,5 @@ td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
 <p class="foot"><b>Henry Moore Studios &amp; Gardens</b> is only an hour away but closed until 1 April, and St Ives is 5h+ each way. Train times are fastest scheduled services; check the actual January timetable and watch for weekend engineering works. Hours are as currently published; recheck everything in December. Sources: <a href="https://www.corinthia.com/en-gb/london/spa-at-corinthia-london/">Corinthia spa</a>, <a href="https://luxurylondon.co.uk/wellbeing/beauty/best-spas-and-spa-days-in-london/">Luxury London spa guide</a>, <a href="https://thenudge.com/sessions-arts-club/">Sessions Arts Club</a>, <a href="https://www.thegoodfoodguide.co.uk/restaurant/dorian/id/59242">Dorian</a>, <a href="https://www.hot-dinners.com/Features/Hot-Dinners-recommends/hot-right-now-london-s-hottest-restaurants">Hot Dinners</a>, <a href="https://www.kettlesyard.cam.ac.uk/plan-your-visit/">Kettle's Yard</a>, <a href="https://www.english-heritage.org.uk/visit/places/kenwood/">Kenwood</a>, <a href="https://www.thermaebathspa.com/opening-times">Thermae Bath Spa</a>, <a href="https://www.gwr.com/stations-and-destinations/popular-routes/london-to-bath">GWR to Bath</a>, <a href="https://henry-moore.org/whats-on/henry-moore-monumental-nature/">Henry Moore: Monumental Nature at Kew</a>, <a href="https://www.kew.org/kew-gardens/visit-kew-gardens/opening-and-closing-times">Kew hours</a>, <a href="https://www.bathinsidertours.co.uk/lacock-and-castle-combe-tour">Bath Insider Tours</a>, <a href="https://www.hauserwirth.com/locations/10068-hauser-wirth-somerset/">Hauser &amp; Wirth Somerset</a>, <a href="https://ysp.org.uk/visit">YSP</a>.</p>
 </main>
 <footer class="site"><b>#TangGang</b> · a private page for the bridesmaids. Hours, prices and links were right when captured — recheck before you book or buy.</footer>
-<script>
-(function(){var svg=document.querySelector('.mapbox svg'),btns=document.querySelectorAll('.legend button');
-btns.forEach(function(b){b.addEventListener('click',function(){var d=b.getAttribute('data-day');
-btns.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
-svg.setAttribute('class',d==='all'?'':'filtered f-'+d);});});})();</script>
+<script></script>
 </body></html>
