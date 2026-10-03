@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Outfits · #TangGang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--ink:#111214;--muted:#5b5e66;--soft:#8a8d95;--line:#e4e4e7;--tint:#f7f7f5;--surface:#fff;
+  --map-ground:#f3f3ef;--park:#dfe9d8;--river:#bcd3e6;
+  --home:#111214;--wed:#b3261e;--thu:#1f7a45;--fri:#a86400;--sat:#2456a6;--sun:#7a3b9c;
+  --wine:#6b1d2b;--green:#2f5d3a;--navy:#1f2f5c;--black:#151516;--purple:#5b3a6e;--pastel:#b9c6d8;--other:#8a7f78}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.crest{text-align:center;padding:38px 16px 0}
+.crest .name{display:block;font-size:clamp(34px,6vw,58px);font-weight:900;letter-spacing:-.04em;line-height:1;text-decoration:none}
+.crest .sub{display:block;margin-top:10px;font-size:11.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--soft)}
+nav.top{display:flex;justify-content:center;gap:6px;margin:26px auto 0;padding:0 16px 0;border-bottom:1px solid var(--ink)}
+nav.top a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:10px 16px 12px;margin-bottom:-1px;border-bottom:3px solid transparent;color:var(--muted)}
+nav.top a:hover{color:var(--ink)}
+nav.top a.on{color:var(--ink);border-bottom-color:var(--ink)}
+.wrap{max-width:1180px;margin:0 auto;padding:36px 16px 70px}
+.narrow{max-width:980px}
+h1{font-size:clamp(30px,4.4vw,48px);line-height:1.02;letter-spacing:-.03em;margin:0 0 12px;text-wrap:balance}
+.lede{font-size:17px;color:var(--muted);max-width:72ch;margin:0 0 20px}
+h2{font-size:22px;letter-spacing:-.015em;margin:40px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--ink)}
+.kicker{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--soft);margin:0 0 8px}
+footer.site{border-top:1px solid var(--line);margin-top:30px;padding:18px 16px 50px;text-align:center;color:var(--soft);font-size:12.5px}
+footer.site b{color:var(--ink)}
+/* cover */
+.cover{max-width:980px;margin:0 auto;padding:50px 16px 70px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:28px}
+.tile{display:block;text-decoration:none;border:1px solid var(--ink);padding:26px 24px 24px;position:relative;min-height:220px;transition:background .15s}
+.tile:hover{background:var(--ink);color:var(--bg)}
+.tile .k{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;opacity:.6}
+.tile h2{border:0;margin:10px 0 8px;font-size:34px;letter-spacing:-.03em;padding:0}
+.tile p{margin:0;opacity:.75;max-width:40ch}
+.tile .go{position:absolute;right:22px;bottom:18px;font-size:22px}
+/* rule cards + filters (outfits) */
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:22px 0 0}
+.rulecard{background:var(--tint);border:1px solid var(--line);padding:14px 16px}
+.rulecard b{display:block;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin-bottom:5px}
+.rulecard p{margin:0;font-size:14.5px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 8px;position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:5;border-bottom:1px solid var(--line)}
+.fbtn{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:6px 13px;font:inherit;font-size:13px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
+.fbtn i{width:11px;height:11px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.12)}
+.fbtn.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.subhead{font-size:22px;letter-spacing:-.015em;margin:36px 0 4px;padding-bottom:6px;border-bottom:1px solid var(--ink)}
+.sub{color:var(--muted);margin:0 0 16px;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media (max-width:1000px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.grid{grid-template-columns:repeat(2,1fr);gap:12px}}
+.dcard{display:flex;flex-direction:column;border:1px solid var(--line);background:var(--surface);break-inside:avoid}
+.dcard .shot{display:block;aspect-ratio:3/4;overflow:hidden;background:var(--tint)}
+.dcard img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .3s}
+.dcard:hover img{transform:scale(1.02)}
+.in{padding:12px 13px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.top{display:flex;align-items:center;gap:8px}
+.num{font-size:12px;color:var(--soft);font-weight:700;font-variant-numeric:tabular-nums}
+.swatch{width:13px;height:13px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.15)}
+.price{margin-left:auto;font-weight:700}
+.dcard h3{margin:0;font-size:16px;line-height:1.25;letter-spacing:-.01em}
+.dcard h3 a{text-decoration:none}.dcard h3 a:hover{text-decoration:underline}
+.brand{margin:0;color:var(--muted);font-size:13px}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{font-size:11px;border:1px solid var(--line);padding:2px 7px;color:var(--muted);letter-spacing:.02em}
+.note{margin:2px 0 0;font-size:13.5px;font-style:italic}
+.link{margin-top:auto;padding-top:8px;font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
+.link:hover{text-decoration:underline}
+.notes ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
+.notes li{margin:5px 0}
+.notes li b{color:var(--ink)}
+/* london */
+.cats{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px}
+.cat{font-size:12px;font-weight:600;border:1px solid var(--line);padding:3px 10px;border-radius:999px;color:var(--muted)}
+.mapbox{border:1px solid var(--line);padding:10px;background:var(--surface)}
+.mapbox svg{display:block;width:100%;height:auto;max-height:78vh}
+.mapbox .area{font-size:13px;fill:var(--soft);text-anchor:middle;font-style:italic}
+.mapbox .river{fill:var(--sat);opacity:.7}
+.mapbox .hood{font-size:11px;letter-spacing:.14em;fill:var(--soft);text-anchor:middle;font-weight:700;opacity:.8}
+.mapbox .num{font-size:11px;font-weight:700;fill:var(--surface);text-anchor:middle}
+.mapbox .lbl{font-size:12.5px;font-weight:600;fill:var(--ink);paint-order:stroke;stroke:var(--map-ground);stroke-width:3.5px}
+.mapbox .sub{font-size:11px;fill:var(--muted);margin:0}
+.mapbox .ring{font-size:11px;fill:var(--soft);font-weight:700}
+.radial{max-width:720px;margin:0 auto}
+.pin{cursor:pointer}.pin:focus-visible circle{stroke:var(--ink);stroke-width:3}
+svg.filtered .pin,svg.filtered .pin-fri,svg.filtered .pin-thu,svg.filtered .pin-sat{opacity:.14}
+svg.filtered.f-wed .pin-wed,svg.filtered.f-thu .pin-thu,svg.filtered.f-fri .pin-fri,svg.filtered.f-sat .pin-sat,svg.filtered.f-sun .pin-sun,svg.filtered .pin-home{opacity:1}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:10px 2px 2px}
+.legend button{font:inherit;font-size:12.5px;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 11px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.legend button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.legend .dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.maphint{font-size:12.5px;color:var(--muted);margin:8px 2px 0}
+.day{border:1px solid var(--line);margin-top:14px;background:var(--surface)}
+.dayhead{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding:14px 16px 10px;border-bottom:1px solid var(--line)}
+.daytag{color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px}
+.dayhead h3{margin:0;font-size:19px;letter-spacing:-.015em}
+.theme{color:var(--soft);font-size:13px;margin-left:auto}
+.slots{padding:6px 16px 10px}
+.slot{display:grid;grid-template-columns:62px 1fr;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line)}
+.slot:last-child{border-bottom:0}
+.slot .t{font-weight:700;font-variant-numeric:tabular-nums;color:var(--muted);font-size:13.5px;padding-top:2px}
+.slot p{margin:0}
+.slot .n{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;color:#fff;font-size:10.5px;font-weight:700;margin-right:6px;vertical-align:1px}
+.slot .tag{display:inline-block;margin-left:8px;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--line);padding:1px 6px;color:var(--soft)}
+.free{color:var(--thu);font-weight:700}
+.book{color:var(--wed);font-weight:700}
+.sunset{text-align:center;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);padding:8px 0 2px}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.card{border:1px solid var(--line);padding:14px 16px;background:var(--surface)}
+.card h4{margin:0 0 2px;font-size:16px;letter-spacing:-.01em}
+.card .meta{font-size:12px;color:var(--soft);margin-bottom:8px;letter-spacing:.04em;text-transform:uppercase;font-weight:600}
+.card p{margin:6px 0 0;font-size:14px;color:var(--muted)}
+.card p b,.card p i{color:var(--ink)}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th{text-align:left;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);font-weight:700;padding:8px 10px;border-bottom:1px solid var(--ink)}
+td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.foot{font-size:13px;color:var(--muted)}
+.foot a{color:var(--muted)}
+@media print{nav.top,.filters,.legend{display:none}.wrap{padding:0}.grid{grid-template-columns:repeat(4,1fr);gap:8px}.dcard{page-break-inside:avoid}.link{display:none}a{color:inherit;text-decoration:none}}
+</style></head><body>
+<header class="crest"><a class="name" href="index.html">#TangGang</a><span class="sub">Sam + Jenni · 3.20.27</span></header>
+<nav class="top"><a href="index.html">Home</a><a href="london.html">London</a><a href="outfits.html" class="on">Outfits</a></nav>
+
+<main class="wrap">
+<p class="kicker">Saturday 20 March 2027 · bridesmaids</p>
+<h1>Bridesmaid dresses</h1>
+<p class="lede">Mixed but coordinated. Everyone picks her own dress inside the palette — the three of you should land in different colours or shapes, not the same dress. Jenni’s own notes are in quotes on the cards. Nothing here is mandatory; these are starting points, and the links go to the live product pages.</p>
+<div class="rules">
+  <div class="rulecard"><b>Theme</b><p>First day of spring. California flower energy, Monet’s garden, wildflowers.</p></div>
+  <div class="rulecard"><b>Colour</b><p>Wine/berry, green, purple — or a pastel: blue, lilac, sage, butter. Same family is great, same dress is not.</p></div>
+  <div class="rulecard"><b>Texture</b><p>Silk, satin, velvet, lace, jacquard, chiffon, florals… Floor-length ideally; the two midis are marked.</p></div>
+  <div class="rulecard"><b>Before you buy</b><p>Send Jenni your pick so nobody doubles up. Watch the “made to order” and “final sale” tags — those can’t come back.</p></div>
+</div>
+<div class="filters"><button class="fbtn on" data-f="all">All</button><button class="fbtn" data-f="wine"><i style="background:#6b1d2b"></i>Wine & berry</button><button class="fbtn" data-f="green"><i style="background:#2f5d3a"></i>Green</button><button class="fbtn" data-f="purple"><i style="background:#5b3a6e"></i>Purple</button><button class="fbtn" data-f="navy"><i style="background:#1f2f5c"></i>Navy</button><button class="fbtn" data-f="other"><i style="background:#8a7f78"></i>Any colour</button><button class="fbtn" data-f="pastel"><i style="background:#b9c6d8"></i>Pastel</button><button class="fbtn" data-f="black"><i style="background:#151516"></i>Black</button></div>
+<h2 class="subhead">Wine & berry</h2>
+<p class="sub">The anchor colour. Burgundy, bordeaux, boysenberry, hibiscus — plain or floral.</p>
+<div class="grid">
+<article class="dcard" data-fam="wine">
+  <a class="shot" href="https://www.jennyyoo.com/products/120102-mto?variant=43726164394081" target="_blank" rel="noopener"><img src="img/jy-brenna.jpg" alt="Brenna — Jenny Yoo" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">1</span><span class="swatch" style="background:#6b1d2b" title="Wine & berry"></span><span class="price">$280</span></div>
+    <h3><a href="https://www.jennyyoo.com/products/120102-mto?variant=43726164394081" target="_blank" rel="noopener">Brenna</a></h3>
+    <p class="brand">Jenny Yoo · Hibiscus (wine)</p>
+    <div class="tags"><span class="tag">Satin</span><span class="tag">V-neck</span><span class="tag">Made to order · 8 wks</span></div>
+    
+    <a class="link" href="https://www.jennyyoo.com/products/120102-mto?variant=43726164394081" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="wine">
+  <a class="shot" href="https://www.jennyyoo.com/products/226103-mto?variant=44012770492513" target="_blank" rel="noopener"><img src="img/jy-luna.jpg" alt="Luna — Jenny Yoo" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">2</span><span class="swatch" style="background:#6b1d2b" title="Wine & berry"></span><span class="price">$298</span></div>
+    <h3><a href="https://www.jennyyoo.com/products/226103-mto?variant=44012770492513" target="_blank" rel="noopener">Luna</a></h3>
+    <p class="brand">Jenny Yoo · Dark Berry</p>
+    <div class="tags"><span class="tag">Satin</span><span class="tag">Cowl halter</span><span class="tag">Open back</span><span class="tag">Made to order · 8 wks</span></div>
+    
+    <a class="link" href="https://www.jennyyoo.com/products/226103-mto?variant=44012770492513" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="wine">
+  <a class="shot" href="https://www.thereformation.com/products/magnus-dress/1312571MEK.html" target="_blank" rel="noopener"><img src="img/ref-magnus.jpg" alt="Magnus Dress — Reformation" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">3</span><span class="swatch" style="background:#6b1d2b" title="Wine & berry"></span><span class="price">$298</span></div>
+    <h3><a href="https://www.thereformation.com/products/magnus-dress/1312571MEK.html" target="_blank" rel="noopener">Magnus Dress</a></h3>
+    <p class="brand">Reformation · Melodic (burgundy floral)</p>
+    <div class="tags"><span class="tag">Chiffon</span><span class="tag">Floral</span><span class="tag">Ruffle tiers</span><span class="tag">Midi</span></div>
+    <p class="note">“the most “Monet’s garden” of the lot”</p>
+    <a class="link" href="https://www.thereformation.com/products/magnus-dress/1312571MEK.html" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="wine">
+  <a class="shot" href="https://www.thereformation.com/products/emilee-silk-dress/1320565BSN.html" target="_blank" rel="noopener"><img src="img/ref-emilee.jpg" alt="Emilee Silk Dress — Reformation" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">4</span><span class="swatch" style="background:#6b1d2b" title="Wine & berry"></span><span class="price">$378</span></div>
+    <h3><a href="https://www.thereformation.com/products/emilee-silk-dress/1320565BSN.html" target="_blank" rel="noopener">Emilee Silk Dress</a></h3>
+    <p class="brand">Reformation · Boysenberry</p>
+    <div class="tags"><span class="tag">Silk</span><span class="tag">Halter</span><span class="tag">Open back</span></div>
+    
+    <a class="link" href="https://www.thereformation.com/products/emilee-silk-dress/1320565BSN.html" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="wine">
+  <a class="shot" href="https://www.thereformation.com/products/katia-dress/1320796BBR.html" target="_blank" rel="noopener"><img src="img/ref-katia-bbr.jpg" alt="Katia Dress — Reformation" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">5</span><span class="swatch" style="background:#6b1d2b" title="Wine & berry"></span><span class="price">$348</span></div>
+    <h3><a href="https://www.thereformation.com/products/katia-dress/1320796BBR.html" target="_blank" rel="noopener">Katia Dress</a></h3>
+    <p class="brand">Reformation · Barcelona border (rust floral)</p>
+    <div class="tags"><span class="tag">Chiffon</span><span class="tag">Floral</span><span class="tag">High cowl</span><span class="tag">Back cutout</span></div>
+    
+    <a class="link" href="https://www.thereformation.com/products/katia-dress/1320796BBR.html" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="wine">
+  <a class="shot" href="https://rixolondon.com/en-us/products/fern-dress-floral-trail-jacquard-wine" target="_blank" rel="noopener"><img src="img/rixo-fern.jpg" alt="Fern Satin Jacquard Midi — RIXO" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">6</span><span class="swatch" style="background:#6b1d2b" title="Wine & berry"></span><span class="price">$385</span></div>
+    <h3><a href="https://rixolondon.com/en-us/products/fern-dress-floral-trail-jacquard-wine" target="_blank" rel="noopener">Fern Satin Jacquard Midi</a></h3>
+    <p class="brand">RIXO · Floral Trail jacquard · Wine</p>
+    <div class="tags"><span class="tag">Satin jacquard</span><span class="tag">Lace trim</span><span class="tag">Midi</span><span class="tag">Pre-order · ships 17 Dec</span></div>
+    
+    <a class="link" href="https://rixolondon.com/en-us/products/fern-dress-floral-trail-jacquard-wine" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="wine">
+  <a class="shot" href="https://rixolondon.com/en-us/search?q=amari" target="_blank" rel="noopener"><img src="img/rixo-amari.jpg" alt="Amari Silk Velvet Dress — RIXO" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">7</span><span class="swatch" style="background:#6b1d2b" title="Wine & berry"></span><span class="price">$395</span></div>
+    <h3><a href="https://rixolondon.com/en-us/search?q=amari" target="_blank" rel="noopener">Amari Silk Velvet Dress</a></h3>
+    <p class="brand">RIXO · Bordeaux</p>
+    <div class="tags"><span class="tag">Silk velvet</span><span class="tag">Long sleeve</span></div>
+    <p class="note">“velvet for a March evening”</p>
+    <a class="link" href="https://rixolondon.com/en-us/search?q=amari" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article>
+</div><h2 class="subhead">Green</h2>
+<p class="sub">Olive, evergreen, sage-leaning darks, and green florals.</p>
+<div class="grid">
+<article class="dcard" data-fam="green">
+  <a class="shot" href="https://www.thereformation.com/products/anaiis-silk-dress/1314547BVD.html" target="_blank" rel="noopener"><img src="img/ref-anaiis-belvedere.jpg" alt="Anaiis Silk Dress — Reformation" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">8</span><span class="swatch" style="background:#2f5d3a" title="Green"></span><span class="price">$398</span></div>
+    <h3><a href="https://www.thereformation.com/products/anaiis-silk-dress/1314547BVD.html" target="_blank" rel="noopener">Anaiis Silk Dress</a></h3>
+    <p class="brand">Reformation · Belvedere (green floral)</p>
+    <div class="tags"><span class="tag">Silk</span><span class="tag">Floral</span><span class="tag">Cowl neck</span></div>
+    <p class="note">“same cut as the navy, with florals”</p>
+    <a class="link" href="https://www.thereformation.com/products/anaiis-silk-dress/1314547BVD.html" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="green">
+  <a class="shot" href="https://www.anthropologie.com/shop/bhldn-amelia-deep-v-flutter-sleeve-satin-a-line-gown?color=030" target="_blank" rel="noopener"><img src="img/bhldn-amelia.jpg" alt="Amelia Deep-V Flutter-Sleeve Satin Gown — BHLDN · Anthropologie" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">9</span><span class="swatch" style="background:#2f5d3a" title="Green"></span><span class="price">$228–248</span></div>
+    <h3><a href="https://www.anthropologie.com/shop/bhldn-amelia-deep-v-flutter-sleeve-satin-a-line-gown?color=030" target="_blank" rel="noopener">Amelia Deep-V Flutter-Sleeve Satin Gown</a></h3>
+    <p class="brand">BHLDN · Anthropologie · Olive</p>
+    <div class="tags"><span class="tag">Satin</span><span class="tag">Flutter sleeve</span><span class="tag">Deep V</span></div>
+    
+    <a class="link" href="https://www.anthropologie.com/shop/bhldn-amelia-deep-v-flutter-sleeve-satin-a-line-gown?color=030" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="green">
+  <a class="shot" href="https://www.thereformation.com/products/katia-dress/1320796EVG.html" target="_blank" rel="noopener"><img src="img/ref-katia-evg.jpg" alt="Katia Dress — Reformation" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">10</span><span class="swatch" style="background:#2f5d3a" title="Green"></span><span class="price">$348</span></div>
+    <h3><a href="https://www.thereformation.com/products/katia-dress/1320796EVG.html" target="_blank" rel="noopener">Katia Dress</a></h3>
+    <p class="brand">Reformation · Evergreen</p>
+    <div class="tags"><span class="tag">Chiffon</span><span class="tag">High cowl</span><span class="tag">Back cutout</span></div>
+    <p class="note">“same cut as the rust floral”</p>
+    <a class="link" href="https://www.thereformation.com/products/katia-dress/1320796EVG.html" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="green">
+  <a class="shot" href="https://www.thereformation.com/products/daniela-silk-dress/1314260PZZ.html" target="_blank" rel="noopener"><img src="img/ref-daniela.jpg" alt="Daniela Silk Dress — Reformation" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">11</span><span class="swatch" style="background:#2f5d3a" title="Green"></span><span class="price">$398</span></div>
+    <h3><a href="https://www.thereformation.com/products/daniela-silk-dress/1314260PZZ.html" target="_blank" rel="noopener">Daniela Silk Dress</a></h3>
+    <p class="brand">Reformation · Olive (6 colours incl. navy)</p>
+    <div class="tags"><span class="tag">Silk</span><span class="tag">Halter</span><span class="tag">Open back</span></div>
+    
+    <a class="link" href="https://www.thereformation.com/products/daniela-silk-dress/1314260PZZ.html" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="green">
+  <a class="shot" href="https://www.anthropologie.com/shop/bhldn-chiffon-caped-maxi-dress" target="_blank" rel="noopener"><img src="img/bhldn-caped.jpg" alt="Chiffon Caped Maxi — BHLDN · Anthropologie" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">12</span><span class="swatch" style="background:#2f5d3a" title="Green"></span><span class="price">$298</span></div>
+    <h3><a href="https://www.anthropologie.com/shop/bhldn-chiffon-caped-maxi-dress" target="_blank" rel="noopener">Chiffon Caped Maxi</a></h3>
+    <p class="brand">BHLDN · Anthropologie · Green floral</p>
+    <div class="tags"><span class="tag">Chiffon</span><span class="tag">Floral</span><span class="tag">Cape</span><span class="tag">Slit</span></div>
+    
+    <a class="link" href="https://www.anthropologie.com/shop/bhldn-chiffon-caped-maxi-dress" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article>
+</div><h2 class="subhead">Purple</h2>
+<p class="sub">Violet, mauve, lilac-leaning darks.</p>
+<div class="grid">
+<article class="dcard" data-fam="purple">
+  <a class="shot" href="https://www.thereformation.com/products/kyley-dress/1320696CUV.html" target="_blank" rel="noopener"><img src="img/ref-kyley.jpg" alt="Kyley Dress — Reformation" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">13</span><span class="swatch" style="background:#5b3a6e" title="Purple"></span><span class="price">$398</span></div>
+    <h3><a href="https://www.thereformation.com/products/kyley-dress/1320696CUV.html" target="_blank" rel="noopener">Kyley Dress</a></h3>
+    <p class="brand">Reformation · Crushed violet</p>
+    <div class="tags"><span class="tag">Chiffon</span><span class="tag">Halter</span><span class="tag">Open back</span></div>
+    <p class="note">“love this purple”</p>
+    <a class="link" href="https://www.thereformation.com/products/kyley-dress/1320696CUV.html" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="purple">
+  <a class="shot" href="https://www.anthropologie.com/shop/bhldn-satin-bias-cut-v-neck-maxi-dress?color=050" target="_blank" rel="noopener"><img src="img/bhldn-biascut.jpg" alt="Satin Bias-Cut V-Neck Maxi — BHLDN · Anthropologie" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">14</span><span class="swatch" style="background:#5b3a6e" title="Purple"></span><span class="price">$288</span></div>
+    <h3><a href="https://www.anthropologie.com/shop/bhldn-satin-bias-cut-v-neck-maxi-dress?color=050" target="_blank" rel="noopener">Satin Bias-Cut V-Neck Maxi</a></h3>
+    <p class="brand">BHLDN · Anthropologie · Purple (mauve)</p>
+    <div class="tags"><span class="tag">Satin</span><span class="tag">Bias cut</span><span class="tag">V-neck</span></div>
+    
+    <a class="link" href="https://www.anthropologie.com/shop/bhldn-satin-bias-cut-v-neck-maxi-dress?color=050" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article>
+</div><h2 class="subhead">Navy</h2>
+<p class="sub">The quiet option — reads as black in photos but warmer in the room.</p>
+<div class="grid">
+<article class="dcard" data-fam="navy">
+  <a class="shot" href="https://www.thereformation.com/products/anaiis-silk-dress/1314547HTE.html?dwvar_1314547HTE_color=NVY" target="_blank" rel="noopener"><img src="img/ref-anaiis-navy.jpg" alt="Anaiis Silk Dress — Reformation" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">15</span><span class="swatch" style="background:#1f2f5c" title="Navy"></span><span class="price">$398</span></div>
+    <h3><a href="https://www.thereformation.com/products/anaiis-silk-dress/1314547HTE.html?dwvar_1314547HTE_color=NVY" target="_blank" rel="noopener">Anaiis Silk Dress</a></h3>
+    <p class="brand">Reformation · Navy</p>
+    <div class="tags"><span class="tag">Silk</span><span class="tag">Cowl neck</span><span class="tag">Open back</span></div>
+    <p class="note">“classic silk”</p>
+    <a class="link" href="https://www.thereformation.com/products/anaiis-silk-dress/1314547HTE.html?dwvar_1314547HTE_color=NVY" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="navy">
+  <a class="shot" href="https://www.anthropologie.com/shop/search?q=selma" target="_blank" rel="noopener"><img src="img/bhldn-selma.jpg" alt="Selma Satin Halter Maxi — BHLDN · Anthropologie" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">16</span><span class="swatch" style="background:#1f2f5c" title="Navy"></span><span class="price">$228–248</span></div>
+    <h3><a href="https://www.anthropologie.com/shop/search?q=selma" target="_blank" rel="noopener">Selma Satin Halter Maxi</a></h3>
+    <p class="brand">BHLDN · Anthropologie · Twilight blue floral</p>
+    <div class="tags"><span class="tag">Satin</span><span class="tag">Halter</span><span class="tag">Floral</span></div>
+    
+    <a class="link" href="https://www.anthropologie.com/shop/search?q=selma" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article>
+</div><h2 class="subhead">Any colour — made to order</h2>
+<p class="sub">Photographed in default colours. Every one comes in burgundy, navy, black and greens: pick the shape, then the colour.</p>
+<div class="grid">
+<article class="dcard" data-fam="other">
+  <a class="shot" href="https://www.jennyyoo.com/products/222105-mto?variant=44011315658849" target="_blank" rel="noopener"><img src="img/jy-nicole.jpg" alt="Nicole — Jenny Yoo" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">17</span><span class="swatch" style="background:#8a7f78" title="Any colour"></span><span class="price">$295</span></div>
+    <h3><a href="https://www.jennyyoo.com/products/222105-mto?variant=44011315658849" target="_blank" rel="noopener">Nicole</a></h3>
+    <p class="brand">Jenny Yoo · Shown in Rust · 40+ colours</p>
+    <div class="tags"><span class="tag">Satin</span><span class="tag">High halter</span><span class="tag">Made to order · 8 wks</span></div>
+    
+    <a class="link" href="https://www.jennyyoo.com/products/222105-mto?variant=44011315658849" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="other">
+  <a class="shot" href="https://amsale.com/collections/amsale-bridesmaids/products/isley" target="_blank" rel="noopener"><img src="img/am-isley.jpg" alt="Isley — Amsale" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">18</span><span class="swatch" style="background:#8a7f78" title="Any colour"></span><span class="price">$300</span></div>
+    <h3><a href="https://amsale.com/collections/amsale-bridesmaids/products/isley" target="_blank" rel="noopener">Isley</a></h3>
+    <p class="brand">Amsale · Shown in Rose · also Ruby, Black, Navy, Evergreen</p>
+    <div class="tags"><span class="tag">Satin</span><span class="tag">V-neck</span><span class="tag">Slit</span><span class="tag">Final sale</span></div>
+    
+    <a class="link" href="https://amsale.com/collections/amsale-bridesmaids/products/isley" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="other">
+  <a class="shot" href="https://amsale.com/collections/amsale-bridesmaids/products/inara" target="_blank" rel="noopener"><img src="img/am-inara.jpg" alt="Inara — Amsale" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">19</span><span class="swatch" style="background:#8a7f78" title="Any colour"></span><span class="price">$300</span></div>
+    <h3><a href="https://amsale.com/collections/amsale-bridesmaids/products/inara" target="_blank" rel="noopener">Inara</a></h3>
+    <p class="brand">Amsale · Shown in Sienna · 30+ colours</p>
+    <div class="tags"><span class="tag">Satin</span><span class="tag">Strapless</span><span class="tag">Draped bodice</span><span class="tag">Final sale</span></div>
+    
+    <a class="link" href="https://amsale.com/collections/amsale-bridesmaids/products/inara" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="other">
+  <a class="shot" href="https://amsale.com/collections/amsale-bridesmaids/products/aretha" target="_blank" rel="noopener"><img src="img/am-aretha.jpg" alt="Aretha — Amsale" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">20</span><span class="swatch" style="background:#8a7f78" title="Any colour"></span><span class="price">$360</span></div>
+    <h3><a href="https://amsale.com/collections/amsale-bridesmaids/products/aretha" target="_blank" rel="noopener">Aretha</a></h3>
+    <p class="brand">Amsale · Shown in Jade · 30+ colours</p>
+    <div class="tags"><span class="tag">Satin</span><span class="tag">Strapless</span><span class="tag">Twist bodice</span><span class="tag">Final sale</span></div>
+    
+    <a class="link" href="https://amsale.com/collections/amsale-bridesmaids/products/aretha" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article>
+</div><h2 class="subhead">Pastel</h2>
+<p class="sub">If someone wants to go light: powder blue, lilac, sage, butter — same shapes as above, softer.</p>
+<div class="grid">
+<article class="dcard" data-fam="pastel">
+  <a class="shot" href="https://www.thereformation.com/products/lilibeth-silk-dress/1318768MEU.html?dwvar_1318768MEU_color=MEU" target="_blank" rel="noopener"><img src="img/ref-lilibeth.jpg" alt="Lilibeth Silk Dress — Reformation" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">21</span><span class="swatch" style="background:#b9c6d8" title="Pastel"></span><span class="price">$328</span></div>
+    <h3><a href="https://www.thereformation.com/products/lilibeth-silk-dress/1318768MEU.html?dwvar_1318768MEU_color=MEU" target="_blank" rel="noopener">Lilibeth Silk Dress</a></h3>
+    <p class="brand">Reformation · Memory Lane (dusty rose) · also Blonde, Mineral, Navy, Hibiscus Tea</p>
+    <div class="tags"><span class="tag">Silk charmeuse</span><span class="tag">Cowl neck</span><span class="tag">Detachable cape</span><span class="tag">Asymmetric hem</span></div>
+    <p class="note">“add this dress!!!!!!”</p>
+    <a class="link" href="https://www.thereformation.com/products/lilibeth-silk-dress/1318768MEU.html?dwvar_1318768MEU_color=MEU" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="pastel">
+  <a class="shot" href="https://www.thereformation.com/products/kyley-dress/1320696CUV.html" target="_blank" rel="noopener"><img src="img/ref-kyley-blue.jpg" alt="Kyley Dress — Reformation" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">22</span><span class="swatch" style="background:#b9c6d8" title="Pastel"></span><span class="price">$398</span></div>
+    <h3><a href="https://www.thereformation.com/products/kyley-dress/1320696CUV.html" target="_blank" rel="noopener">Kyley Dress</a></h3>
+    <p class="brand">Reformation · Cloud blue</p>
+    <div class="tags"><span class="tag">Chiffon</span><span class="tag">Halter</span><span class="tag">Open back</span></div>
+    <p class="note">“the purple one Jenni loves, in blue”</p>
+    <a class="link" href="https://www.thereformation.com/products/kyley-dress/1320696CUV.html" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="pastel">
+  <a class="shot" href="https://www.thereformation.com/products/emilee-silk-dress/1320565BSN.html?dwvar_1320565BSN_color=PMN" target="_blank" rel="noopener"><img src="img/ref-emilee-parmesan.jpg" alt="Emilee Silk Dress — Reformation" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">23</span><span class="swatch" style="background:#b9c6d8" title="Pastel"></span><span class="price">$378</span></div>
+    <h3><a href="https://www.thereformation.com/products/emilee-silk-dress/1320565BSN.html?dwvar_1320565BSN_color=PMN" target="_blank" rel="noopener">Emilee Silk Dress</a></h3>
+    <p class="brand">Reformation · Parmesan (butter yellow)</p>
+    <div class="tags"><span class="tag">Silk</span><span class="tag">Halter</span><span class="tag">Open back</span></div>
+    
+    <a class="link" href="https://www.thereformation.com/products/emilee-silk-dress/1320565BSN.html?dwvar_1320565BSN_color=PMN" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="pastel">
+  <a class="shot" href="https://www.anthropologie.com/shop/bhldn-nesta-strapless-satin-scarf-maxi-dress" target="_blank" rel="noopener"><img src="img/bhldn-nesta.jpg" alt="Nesta Strapless Satin Scarf Maxi — BHLDN · Anthropologie" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">24</span><span class="swatch" style="background:#b9c6d8" title="Pastel"></span><span class="price">$248</span></div>
+    <h3><a href="https://www.anthropologie.com/shop/bhldn-nesta-strapless-satin-scarf-maxi-dress" target="_blank" rel="noopener">Nesta Strapless Satin Scarf Maxi</a></h3>
+    <p class="brand">BHLDN · Anthropologie · Lilac Vintage Rose</p>
+    <div class="tags"><span class="tag">Satin</span><span class="tag">Floral</span><span class="tag">Strapless</span><span class="tag">Scarf</span></div>
+    <p class="note">“pastel + floral in one”</p>
+    <a class="link" href="https://www.anthropologie.com/shop/bhldn-nesta-strapless-satin-scarf-maxi-dress" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="pastel">
+  <a class="shot" href="https://www.anthropologie.com/shop/bhldn-sienna-off-the-shoulder-high-shine-satin-maxi-dress?color=040" target="_blank" rel="noopener"><img src="img/bhldn-sienna-blue.jpg" alt="Sienna Off-the-Shoulder Satin Maxi — BHLDN · Anthropologie" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">25</span><span class="swatch" style="background:#b9c6d8" title="Pastel"></span><span class="price">$228–248</span></div>
+    <h3><a href="https://www.anthropologie.com/shop/bhldn-sienna-off-the-shoulder-high-shine-satin-maxi-dress?color=040" target="_blank" rel="noopener">Sienna Off-the-Shoulder Satin Maxi</a></h3>
+    <p class="brand">BHLDN · Anthropologie · Ocean Blue (also sage, cypress green, lilac)</p>
+    <div class="tags"><span class="tag">Satin</span><span class="tag">Off shoulder</span></div>
+    
+    <a class="link" href="https://www.anthropologie.com/shop/bhldn-sienna-off-the-shoulder-high-shine-satin-maxi-dress?color=040" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="pastel">
+  <a class="shot" href="https://www.jennyyoo.com/products/226103?variant=45740029935713" target="_blank" rel="noopener"><img src="img/jy-luna-blue.jpg" alt="Luna — Jenny Yoo" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">26</span><span class="swatch" style="background:#b9c6d8" title="Pastel"></span><span class="price">$298</span></div>
+    <h3><a href="https://www.jennyyoo.com/products/226103?variant=45740029935713" target="_blank" rel="noopener">Luna</a></h3>
+    <p class="brand">Jenny Yoo · Whisper Blue · ready to ship</p>
+    <div class="tags"><span class="tag">Satin</span><span class="tag">Cowl halter</span><span class="tag">Ready to ship</span></div>
+    <p class="note">“Luna again, but pale”</p>
+    <a class="link" href="https://www.jennyyoo.com/products/226103?variant=45740029935713" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="pastel">
+  <a class="shot" href="https://www.jennyyoo.com/products/226103-mto?variant=44012774850657" target="_blank" rel="noopener"><img src="img/jy-luna-eucalyptus.jpg" alt="Luna — Jenny Yoo" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">27</span><span class="swatch" style="background:#b9c6d8" title="Pastel"></span><span class="price">$298</span></div>
+    <h3><a href="https://www.jennyyoo.com/products/226103-mto?variant=44012774850657" target="_blank" rel="noopener">Luna</a></h3>
+    <p class="brand">Jenny Yoo · Eucalyptus</p>
+    <div class="tags"><span class="tag">Satin</span><span class="tag">Cowl halter</span><span class="tag">Made to order · 8 wks</span></div>
+    
+    <a class="link" href="https://www.jennyyoo.com/products/226103-mto?variant=44012774850657" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article>
+</div><h2 class="subhead">Black — the backup</h2>
+<p class="sub">Plain or floral. Fine if the texture is doing the work.</p>
+<div class="grid">
+<article class="dcard" data-fam="black">
+  <a class="shot" href="https://www.thereformation.com/products/vivianna-dress/1320802NBU.html" target="_blank" rel="noopener"><img src="img/ref-vivianna.jpg" alt="Vivianna Dress — Reformation" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">28</span><span class="swatch" style="background:#151516" title="Black"></span><span class="price">$448</span></div>
+    <h3><a href="https://www.thereformation.com/products/vivianna-dress/1320802NBU.html" target="_blank" rel="noopener">Vivianna Dress</a></h3>
+    <p class="brand">Reformation · Noir burnout</p>
+    <div class="tags"><span class="tag">Velvet burnout</span><span class="tag">Floral</span><span class="tag">High neck</span></div>
+    <p class="note">“cool black floral”</p>
+    <a class="link" href="https://www.thereformation.com/products/vivianna-dress/1320802NBU.html" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="black">
+  <a class="shot" href="https://www.thereformation.com/products/fabienne-dress/1320697DAL.html" target="_blank" rel="noopener"><img src="img/ref-fabienne.jpg" alt="Fabienne Dress — Reformation" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">29</span><span class="swatch" style="background:#151516" title="Black"></span><span class="price">$348</span></div>
+    <h3><a href="https://www.thereformation.com/products/fabienne-dress/1320697DAL.html" target="_blank" rel="noopener">Fabienne Dress</a></h3>
+    <p class="brand">Reformation · Ballad (black floral)</p>
+    <div class="tags"><span class="tag">Chiffon</span><span class="tag">Floral</span><span class="tag">High neck</span><span class="tag">Ruched</span></div>
+    
+    <a class="link" href="https://www.thereformation.com/products/fabienne-dress/1320697DAL.html" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="black">
+  <a class="shot" href="https://www.thereformation.com/products/ciera-dress/1320557OBS.html" target="_blank" rel="noopener"><img src="img/ref-ciera-lace.jpg" alt="Ciera Dress — Reformation" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">30</span><span class="swatch" style="background:#151516" title="Black"></span><span class="price">$328</span></div>
+    <h3><a href="https://www.thereformation.com/products/ciera-dress/1320557OBS.html" target="_blank" rel="noopener">Ciera Dress</a></h3>
+    <p class="brand">Reformation · Obsidian lace (also Eclipse navy)</p>
+    <div class="tags"><span class="tag">Lace</span><span class="tag">Deep V</span><span class="tag">Slip</span></div>
+    <p class="note">“texture without print”</p>
+    <a class="link" href="https://www.thereformation.com/products/ciera-dress/1320557OBS.html" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="black">
+  <a class="shot" href="https://www.anthropologie.com/shop/search?q=floral%20chiffon%20plunge%20long-sleeve" target="_blank" rel="noopener"><img src="img/bhldn-plunge.jpg" alt="Floral Chiffon Plunge Long-Sleeve Maxi — BHLDN · Anthropologie" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">31</span><span class="swatch" style="background:#151516" title="Black"></span><span class="price">$298</span></div>
+    <h3><a href="https://www.anthropologie.com/shop/search?q=floral%20chiffon%20plunge%20long-sleeve" target="_blank" rel="noopener">Floral Chiffon Plunge Long-Sleeve Maxi</a></h3>
+    <p class="brand">BHLDN · Anthropologie · Black floral</p>
+    <div class="tags"><span class="tag">Chiffon</span><span class="tag">Floral</span><span class="tag">Long sleeve</span><span class="tag">Plunge</span></div>
+    
+    <a class="link" href="https://www.anthropologie.com/shop/search?q=floral%20chiffon%20plunge%20long-sleeve" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article><article class="dcard" data-fam="black">
+  <a class="shot" href="https://rixolondon.com/en-us/search?q=ordinia" target="_blank" rel="noopener"><img src="img/rixo-ordinia.jpg" alt="Ordinia Gown — RIXO" loading="lazy"></a>
+  <div class="in">
+    <div class="top"><span class="num">32</span><span class="swatch" style="background:#151516" title="Black"></span><span class="price">$695</span></div>
+    <h3><a href="https://rixolondon.com/en-us/search?q=ordinia" target="_blank" rel="noopener">Ordinia Gown</a></h3>
+    <p class="brand">RIXO · Black floral</p>
+    <div class="tags"><span class="tag">Silk</span><span class="tag">Floral</span><span class="tag">Gown</span></div>
+    <p class="note">“the splurge”</p>
+    <a class="link" href="https://rixolondon.com/en-us/search?q=ordinia" target="_blank" rel="noopener">View &#8599;</a>
+  </div>
+</article>
+</div>
+<div class="notes">
+  <h2>Ordering notes</h2>
+  <ul>
+    <li><b>Timing:</b> the wedding is Saturday 20 March 2027. Jenny Yoo made-to-order takes ~8 weeks, plus 3–4 weeks for alterations — so order by early January; December is safe. RIXO Fern is a pre-order shipping 17 December.</li>
+    <li><b>Returns:</b> Reformation and BHLDN/Anthropologie are returnable. Jenny Yoo made-to-order and Amsale are final sale — order a swatch first if unsure (Amsale swatches are $5).</li>
+    <li><b>Colours shown</b> on Amsale and Jenny Yoo Nicole are defaults — every one of them comes in burgundy, navy, black and greens.</li>
+    <li><b>Weather:</b> March in New York averages around 43°F. A wrap, cape or long sleeve is worth thinking about for the photos outside.</li>
+    <li><b>Prices</b> were captured 29 September 2026 and will move.</li>
+  </ul>
+</div>
+</main>
+<footer class="site"><b>#TangGang</b> · a private page for the bridesmaids. Hours, prices and links were right when captured — recheck before you book or buy.</footer>
+<script>
+(function(){var b=document.querySelectorAll('.fbtn'),c=document.querySelectorAll('.dcard'),g=document.querySelectorAll('.grid');
+b.forEach(function(x){x.addEventListener('click',function(){b.forEach(function(y){y.classList.remove('on')});x.classList.add('on');
+var f=x.dataset.f;c.forEach(function(d){d.style.display=(f==='all'||d.dataset.fam===f)?'':'none'});
+g.forEach(function(grid){var vis=0;grid.querySelectorAll('.dcard').forEach(function(d){if(d.style.display!=='none')vis++;});
+var sub=grid.previousElementSibling,head=sub&&sub.previousElementSibling;
+if(sub&&sub.classList.contains('sub'))sub.style.display=vis?'':'none';
+if(head&&head.classList.contains('subhead'))head.style.display=vis?'':'none';
+grid.style.display=vis?'':'none';});})});})();</script>
+</body></html>

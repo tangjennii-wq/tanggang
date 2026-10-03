@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>London · #TangGang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--ink:#111214;--muted:#5b5e66;--soft:#8a8d95;--line:#e4e4e7;--tint:#f7f7f5;--surface:#fff;
+  --map-ground:#f3f3ef;--park:#dfe9d8;--river:#bcd3e6;
+  --home:#111214;--wed:#b3261e;--thu:#1f7a45;--fri:#a86400;--sat:#2456a6;--sun:#7a3b9c;
+  --wine:#6b1d2b;--green:#2f5d3a;--navy:#1f2f5c;--black:#151516;--purple:#5b3a6e;--pastel:#b9c6d8;--other:#8a7f78}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.crest{text-align:center;padding:38px 16px 0}
+.crest .name{display:block;font-size:clamp(34px,6vw,58px);font-weight:900;letter-spacing:-.04em;line-height:1;text-decoration:none}
+.crest .sub{display:block;margin-top:10px;font-size:11.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--soft)}
+nav.top{display:flex;justify-content:center;gap:6px;margin:26px auto 0;padding:0 16px 0;border-bottom:1px solid var(--ink)}
+nav.top a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:10px 16px 12px;margin-bottom:-1px;border-bottom:3px solid transparent;color:var(--muted)}
+nav.top a:hover{color:var(--ink)}
+nav.top a.on{color:var(--ink);border-bottom-color:var(--ink)}
+.wrap{max-width:1180px;margin:0 auto;padding:36px 16px 70px}
+.narrow{max-width:980px}
+h1{font-size:clamp(30px,4.4vw,48px);line-height:1.02;letter-spacing:-.03em;margin:0 0 12px;text-wrap:balance}
+.lede{font-size:17px;color:var(--muted);max-width:72ch;margin:0 0 20px}
+h2{font-size:22px;letter-spacing:-.015em;margin:40px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--ink)}
+.kicker{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--soft);margin:0 0 8px}
+footer.site{border-top:1px solid var(--line);margin-top:30px;padding:18px 16px 50px;text-align:center;color:var(--soft);font-size:12.5px}
+footer.site b{color:var(--ink)}
+/* cover */
+.cover{max-width:980px;margin:0 auto;padding:50px 16px 70px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:28px}
+.tile{display:block;text-decoration:none;border:1px solid var(--ink);padding:26px 24px 24px;position:relative;min-height:220px;transition:background .15s}
+.tile:hover{background:var(--ink);color:var(--bg)}
+.tile .k{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;opacity:.6}
+.tile h2{border:0;margin:10px 0 8px;font-size:34px;letter-spacing:-.03em;padding:0}
+.tile p{margin:0;opacity:.75;max-width:40ch}
+.tile .go{position:absolute;right:22px;bottom:18px;font-size:22px}
+/* rule cards + filters (outfits) */
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:22px 0 0}
+.rulecard{background:var(--tint);border:1px solid var(--line);padding:14px 16px}
+.rulecard b{display:block;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin-bottom:5px}
+.rulecard p{margin:0;font-size:14.5px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 8px;position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:5;border-bottom:1px solid var(--line)}
+.fbtn{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:6px 13px;font:inherit;font-size:13px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
+.fbtn i{width:11px;height:11px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.12)}
+.fbtn.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.subhead{font-size:22px;letter-spacing:-.015em;margin:36px 0 4px;padding-bottom:6px;border-bottom:1px solid var(--ink)}
+.sub{color:var(--muted);margin:0 0 16px;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media (max-width:1000px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.grid{grid-template-columns:repeat(2,1fr);gap:12px}}
+.dcard{display:flex;flex-direction:column;border:1px solid var(--line);background:var(--surface);break-inside:avoid}
+.dcard .shot{display:block;aspect-ratio:3/4;overflow:hidden;background:var(--tint)}
+.dcard img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .3s}
+.dcard:hover img{transform:scale(1.02)}
+.in{padding:12px 13px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.top{display:flex;align-items:center;gap:8px}
+.num{font-size:12px;color:var(--soft);font-weight:700;font-variant-numeric:tabular-nums}
+.swatch{width:13px;height:13px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.15)}
+.price{margin-left:auto;font-weight:700}
+.dcard h3{margin:0;font-size:16px;line-height:1.25;letter-spacing:-.01em}
+.dcard h3 a{text-decoration:none}.dcard h3 a:hover{text-decoration:underline}
+.brand{margin:0;color:var(--muted);font-size:13px}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{font-size:11px;border:1px solid var(--line);padding:2px 7px;color:var(--muted);letter-spacing:.02em}
+.note{margin:2px 0 0;font-size:13.5px;font-style:italic}
+.link{margin-top:auto;padding-top:8px;font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
+.link:hover{text-decoration:underline}
+.notes ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
+.notes li{margin:5px 0}
+.notes li b{color:var(--ink)}
+/* london */
+.cats{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px}
+.cat{font-size:12px;font-weight:600;border:1px solid var(--line);padding:3px 10px;border-radius:999px;color:var(--muted)}
+.mapbox{border:1px solid var(--line);padding:10px;background:var(--surface)}
+.mapbox svg{display:block;width:100%;height:auto;max-height:78vh}
+.mapbox .area{font-size:13px;fill:var(--soft);text-anchor:middle;font-style:italic}
+.mapbox .river{fill:var(--sat);opacity:.7}
+.mapbox .hood{font-size:11px;letter-spacing:.14em;fill:var(--soft);text-anchor:middle;font-weight:700;opacity:.8}
+.mapbox .num{font-size:11px;font-weight:700;fill:var(--surface);text-anchor:middle}
+.mapbox .lbl{font-size:12.5px;font-weight:600;fill:var(--ink);paint-order:stroke;stroke:var(--map-ground);stroke-width:3.5px}
+.mapbox .sub{font-size:11px;fill:var(--muted);margin:0}
+.mapbox .ring{font-size:11px;fill:var(--soft);font-weight:700}
+.radial{max-width:720px;margin:0 auto}
+.pin{cursor:pointer}.pin:focus-visible circle{stroke:var(--ink);stroke-width:3}
+svg.filtered .pin,svg.filtered .pin-fri,svg.filtered .pin-thu,svg.filtered .pin-sat{opacity:.14}
+svg.filtered.f-wed .pin-wed,svg.filtered.f-thu .pin-thu,svg.filtered.f-fri .pin-fri,svg.filtered.f-sat .pin-sat,svg.filtered.f-sun .pin-sun,svg.filtered .pin-home{opacity:1}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:10px 2px 2px}
+.legend button{font:inherit;font-size:12.5px;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 11px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.legend button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.legend .dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.maphint{font-size:12.5px;color:var(--muted);margin:8px 2px 0}
+.day{border:1px solid var(--line);margin-top:14px;background:var(--surface)}
+.dayhead{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding:14px 16px 10px;border-bottom:1px solid var(--line)}
+.daytag{color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px}
+.dayhead h3{margin:0;font-size:19px;letter-spacing:-.015em}
+.theme{color:var(--soft);font-size:13px;margin-left:auto}
+.slots{padding:6px 16px 10px}
+.slot{display:grid;grid-template-columns:62px 1fr;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line)}
+.slot:last-child{border-bottom:0}
+.slot .t{font-weight:700;font-variant-numeric:tabular-nums;color:var(--muted);font-size:13.5px;padding-top:2px}
+.slot p{margin:0}
+.slot .n{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;color:#fff;font-size:10.5px;font-weight:700;margin-right:6px;vertical-align:1px}
+.slot .tag{display:inline-block;margin-left:8px;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--line);padding:1px 6px;color:var(--soft)}
+.free{color:var(--thu);font-weight:700}
+.book{color:var(--wed);font-weight:700}
+.sunset{text-align:center;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);padding:8px 0 2px}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.card{border:1px solid var(--line);padding:14px 16px;background:var(--surface)}
+.card h4{margin:0 0 2px;font-size:16px;letter-spacing:-.01em}
+.card .meta{font-size:12px;color:var(--soft);margin-bottom:8px;letter-spacing:.04em;text-transform:uppercase;font-weight:600}
+.card p{margin:6px 0 0;font-size:14px;color:var(--muted)}
+.card p b,.card p i{color:var(--ink)}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th{text-align:left;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);font-weight:700;padding:8px 10px;border-bottom:1px solid var(--ink)}
+td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.foot{font-size:13px;color:var(--muted)}
+.foot a{color:var(--muted)}
+@media print{nav.top,.filters,.legend{display:none}.wrap{padding:0}.grid{grid-template-columns:repeat(4,1fr);gap:8px}.dcard{page-break-inside:avoid}.link{display:none}a{color:inherit;text-decoration:none}}
+</style></head><body>
+<header class="crest"><a class="name" href="index.html">#TangGang</a><span class="sub">Sam + Jenni · 3.20.27</span></header>
+<nav class="top"><a href="index.html">Home</a><a href="london.html" class="on">London</a><a href="outfits.html">Outfits</a></nav>
+<main class="wrap narrow">
+<div class="pagehead">
+  <div class="kicker">London &middot; Wed 13 &ndash; Mon 18 January 2027 &middot; Ham Yard Hotel, Soho</div>
+  <h1>London, in January</h1>
+  <p class="lede">Five nights, four of you, built around what January actually allows: light from about 8:00 to 4:20, so the outdoor things happen early and the city takes over after dark. No sit-down lunches or breakfasts &mdash; grab something on the move and spend the daylight on the good stuff. Every stop is on the map, numbered and coloured by day. Tap a pin to open it in Google Maps.</p>
+  <div class="cats"><span class="cat">Shopping</span><span class="cat">Art</span><span class="cat">Sculpture</span><span class="cat">Bars</span><span class="cat">Two fancy dinners</span><span class="cat">Spa</span><span class="cat">Two day trips</span></div>
+</div>
+
+<section>
+  <div class="mapbox">
+    <svg viewBox="0 0 981 948" role="img" aria-label="Map of central London with every stop numbered by day">
+<rect x="0" y="0" width="981" height="948" rx="14" fill="var(--map-ground)"/>
+<ellipse cx="322.6" cy="154.0" rx="99.5" ry="85.0" fill="var(--park)"/>
+<text x="323" y="154" class="area">Hampstead Heath</text>
+<ellipse cx="378.6" cy="509.0" rx="65.3" ry="60.0" fill="var(--park)"/>
+<text x="379" y="509" class="area">Regent's Park</text>
+<ellipse cx="297.7" cy="709.0" rx="112.0" ry="45.0" fill="var(--park)"/>
+<text x="298" y="709" class="area">Hyde Park</text>
+<ellipse cx="503.0" cy="754.0" rx="37.3" ry="22.0" fill="var(--park)"/>
+<polyline points="5.3,1084.0 160.9,1004.0 285.3,964.0 409.7,944.0 503.0,924.0 574.6,879.0 577.7,824.0 590.1,754.0 602.6,704.0 658.5,679.0 720.8,689.0 783.0,699.0 857.6,719.0 969.6,714.0" fill="none" stroke="var(--river)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="733" y="789" class="area river">River Thames</text>
+<text x="512" y="644" class="hood">SOHO</text>
+<text x="397" y="594" class="hood">MARYLEBONE</text>
+<text x="105" y="656" class="hood">NOTTING HILL</text>
+<text x="820" y="474" class="hood">SHOREDITCH</text>
+<text x="771" y="624" class="hood">THE CITY</text>
+<text x="422" y="654" class="hood">MAYFAIR</text>
+<line x1="558" y1="432" x2="708" y2="242" stroke="var(--fri)" stroke-width="2" stroke-dasharray="5 5" class="pin-fri"/>
+<g class="pin-fri"><rect x="658" y="200" width="170" height="40" rx="10" fill="var(--surface)" stroke="var(--fri)"/><text x="672" y="217" class="lbl">To Cambridge</text><text x="672" y="232" class="sub">50 min by train · Fri</text></g>
+<line x1="316" y1="229" x2="221" y2="349" stroke="var(--thu)" stroke-width="2" stroke-dasharray="5 5" class="pin-thu"/>
+<g class="pin-thu"><rect x="54" y="339" width="190" height="40" rx="10" fill="var(--surface)" stroke="var(--thu)"/><circle cx="70" cy="359" r="10" fill="var(--thu)"/><text x="70" y="363" class="num">26</text><text x="86" y="356" class="lbl">To Kew · Henry Moore</text><text x="86" y="371" class="sub">40 min Overground · Thu</text></g>
+<line x1="242" y1="617" x2="202" y2="767" stroke="var(--sat)" stroke-width="2" stroke-dasharray="5 5" class="pin-sat"/>
+<g class="pin-sat"><rect x="122" y="767" width="210" height="40" rx="10" fill="var(--surface)" stroke="var(--sat)"/><text x="136" y="784" class="lbl">To Bath &amp; the Cotswolds</text><text x="136" y="799" class="sub">1h20 by train · Sat</text></g>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Ham+Yard+Hotel%2C+London" target="_blank" rel="noopener" class="pin pin-home"><title>Ham Yard Hotel</title><circle cx="503.0" cy="675.0" r="12" fill="var(--home)" stroke="var(--surface)" stroke-width="2"/><text x="503.0" y="678.6" class="num">H</text><text x="513.0" y="667.0" text-anchor="start" class="lbl">Ham Yard Hotel</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Dover+Street+Market+Haymarket%2C+London" target="_blank" rel="noopener" class="pin pin-wed"><title>Dover Street Market</title><circle cx="524.2" cy="693.0" r="10" fill="var(--wed)" stroke="var(--surface)" stroke-width="2"/><text x="524.2" y="696.6" class="num">2</text><text x="534.2" y="707.0" text-anchor="start" class="lbl">Dover Street Market</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Liberty+London%2C+London" target="_blank" rel="noopener" class="pin pin-wed"><title>Liberty</title><circle cx="470.7" cy="643.0" r="10" fill="var(--wed)" stroke="var(--surface)" stroke-width="2"/><text x="470.7" y="646.6" class="num">3</text><text x="460.7" y="633.0" text-anchor="end" class="lbl">Liberty</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Sir+John+Soane%27s+Museum%2C+London" target="_blank" rel="noopener" class="pin pin-wed"><title>Sir John Soane&#x27;s Museum</title><circle cx="611.9" cy="614.0" r="10" fill="var(--wed)" stroke="var(--surface)" stroke-width="2"/><text x="611.9" y="617.6" class="num">4</text><text x="621.9" y="608.0" text-anchor="start" class="lbl">Sir John Soane&#x27;s Museum</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Corinthia+London%2C+London" target="_blank" rel="noopener" class="pin pin-wed"><title>Biome spa, Corinthia</title><circle cx="569.6" cy="721.0" r="10" fill="var(--wed)" stroke="var(--surface)" stroke-width="2"/><text x="569.6" y="724.6" class="num">5</text><text x="579.6" y="733.0" text-anchor="start" class="lbl">Biome spa</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Parliament+Hill%2C+London" target="_blank" rel="noopener" class="pin pin-thu"><title>Parliament Hill</title><circle cx="347.5" cy="188.0" r="10" fill="var(--thu)" stroke="var(--surface)" stroke-width="2"/><text x="347.5" y="191.6" class="num">6</text><text x="357.5" y="192.0" text-anchor="start" class="lbl">Parliament Hill</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Kenwood+House%2C+London" target="_blank" rel="noopener" class="pin pin-thu"><title>Kenwood House</title><circle cx="300.2" cy="71.0" r="10" fill="var(--thu)" stroke="var(--surface)" stroke-width="2"/><text x="300.2" y="74.6" class="num">7</text><text x="310.2" y="75.0" text-anchor="start" class="lbl">Kenwood House</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=MOI+Wardour+Street+Soho%2C+London" target="_blank" rel="noopener" class="pin pin-thu"><title>MOI</title><circle cx="515.5" cy="646.0" r="10" fill="var(--thu)" stroke="var(--surface)" stroke-width="2"/><text x="515.5" y="649.6" class="num">10</text><text x="525.5" y="638.0" text-anchor="start" class="lbl">MOI</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Coal+Drops+Yard%2C+London" target="_blank" rel="noopener" class="pin pin-fri"><title>King&#x27;s Cross &amp; Coal Drops Yard</title><circle cx="557.8" cy="432.0" r="10" fill="var(--fri)" stroke="var(--surface)" stroke-width="2"/><text x="557.8" y="435.6" class="num">11</text><text x="567.8" y="436.0" text-anchor="start" class="lbl">King&#x27;s Cross &amp; Coal Drops Yard</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Dennis+Severs%27+House%2C+London" target="_blank" rel="noopener" class="pin pin-fri"><title>Dennis Severs&#x27; House</title><circle cx="855.1" cy="581.0" r="10" fill="var(--fri)" stroke="var(--surface)" stroke-width="2"/><text x="855.1" y="584.6" class="num">12</text><text x="845.1" y="599.0" text-anchor="end" class="lbl">Dennis Severs&#x27; House</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Tate+Modern%2C+London" target="_blank" rel="noopener" class="pin pin-sun"><title>Tate Modern</title><circle cx="724.5" cy="708.0" r="10" fill="var(--sun)" stroke="var(--surface)" stroke-width="2"/><text x="724.5" y="711.6" class="num">13</text><text x="714.5" y="698.0" text-anchor="end" class="lbl">Tate Modern</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Tate+Britain%2C+London" target="_blank" rel="noopener" class="pin pin-sun"><title>Tate Britain</title><circle cx="549.7" cy="873.0" r="10" fill="var(--sun)" stroke="var(--surface)" stroke-width="2"/><text x="549.7" y="876.6" class="num">15</text><text x="559.7" y="877.0" text-anchor="start" class="lbl">Tate Britain</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=The+Connaught+Bar%2C+London" target="_blank" rel="noopener" class="pin pin-sat"><title>The Connaught Bar</title><circle cx="410.9" cy="684.0" r="10" fill="var(--sat)" stroke="var(--surface)" stroke-width="2"/><text x="410.9" y="687.6" class="num">16</text><text x="400.9" y="698.0" text-anchor="end" class="lbl">The Connaught Bar</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Ambassadors+Clubhouse+Heddon+Street%2C+London" target="_blank" rel="noopener" class="pin pin-sat"><title>Ambassadors Clubhouse</title><circle cx="475.0" cy="671.0" r="10" fill="var(--sat)" stroke="var(--surface)" stroke-width="2"/><text x="475.0" y="674.6" class="num">17</text><text x="485.0" y="685.0" text-anchor="start" class="lbl">Ambassadors Clubhouse</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Columbia+Road+Flower+Market%2C+London" target="_blank" rel="noopener" class="pin pin-sun"><title>Columbia Road Flower Market</title><circle cx="903.0" cy="490.0" r="10" fill="var(--sun)" stroke="var(--surface)" stroke-width="2"/><text x="903.0" y="493.6" class="num">18</text><text x="893.0" y="480.0" text-anchor="end" class="lbl">Columbia Road Flower Market</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Blacklock+Shoreditch%2C+London" target="_blank" rel="noopener" class="pin pin-sun"><title>Blacklock Shoreditch</title><circle cx="840.2" cy="523.0" r="10" fill="var(--sun)" stroke="var(--surface)" stroke-width="2"/><text x="840.2" y="526.6" class="num">19</text><text x="850.2" y="539.0" text-anchor="start" class="lbl">Blacklock Shoreditch</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Barbican+Centre%2C+London" target="_blank" rel="noopener" class="pin pin-sun"><title>The Barbican</title><circle cx="759.9" cy="582.0" r="10" fill="var(--sun)" stroke="var(--surface)" stroke-width="2"/><text x="759.9" y="585.6" class="num">20</text><text x="749.9" y="598.0" text-anchor="end" class="lbl">The Barbican</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Zephyr+Notting+Hill%2C+London" target="_blank" rel="noopener" class="pin pin-wed"><title>zēphyr</title><circle cx="95.5" cy="634.0" r="10" fill="var(--wed)" stroke="var(--surface)" stroke-width="2"/><text x="95.5" y="637.6" class="num">22</text><text x="85.5" y="626.0" text-anchor="end" class="lbl">zēphyr</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=nina+Thayer+Street+Marylebone%2C+London" target="_blank" rel="noopener" class="pin pin-fri"><title>nina</title><circle cx="399.8" cy="606.0" r="10" fill="var(--fri)" stroke="var(--surface)" stroke-width="2"/><text x="399.8" y="609.6" class="num">23</text><text x="409.8" y="598.0" text-anchor="start" class="lbl">nina</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=London+Paddington+station%2C+London" target="_blank" rel="noopener" class="pin pin-sat"><title>Paddington</title><circle cx="242.4" cy="617.0" r="10" fill="var(--sat)" stroke="var(--surface)" stroke-width="2"/><text x="242.4" y="620.6" class="num">27</text><text x="252.4" y="609.0" text-anchor="start" class="lbl">Paddington</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=The+Lore+of+the+Land+Fitzrovia%2C+London" target="_blank" rel="noopener" class="pin pin-thu"><title>Lore of the Land</title><circle cx="490.6" cy="594.0" r="10" fill="var(--thu)" stroke="var(--surface)" stroke-width="2"/><text x="490.6" y="597.6" class="num">25</text><text x="500.6" y="586.0" text-anchor="start" class="lbl">Lore of the Land</text></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Scarfes+Bar+Rosewood+London%2C+London" target="_blank" rel="noopener" class="pin pin-sun"><title>Scarfes Bar, Rosewood</title><circle cx="588.9" cy="604.0" r="10" fill="var(--sun)" stroke="var(--surface)" stroke-width="2"/><text x="588.9" y="607.6" class="num">21</text><text x="578.9" y="620.0" text-anchor="end" class="lbl">Scarfes Bar</text></a>
+</svg>
+    <div class="legend" role="group" aria-label="Show one day on the map">
+      <button type="button" id="f-all" data-day="all" aria-pressed="true"><span class="dot" style="background:var(--home)"></span>All days</button>
+      <button type="button" id="f-wed" data-day="wed" aria-pressed="false"><span class="dot" style="background:var(--wed)"></span>Wed 13</button>
+      <button type="button" id="f-thu" data-day="thu" aria-pressed="false"><span class="dot" style="background:var(--thu)"></span>Thu 14</button>
+      <button type="button" id="f-fri" data-day="fri" aria-pressed="false"><span class="dot" style="background:var(--fri)"></span>Fri 15</button>
+      <button type="button" id="f-sat" data-day="sat" aria-pressed="false"><span class="dot" style="background:var(--sat)"></span>Sat 16</button>
+      <button type="button" id="f-sun" data-day="sun" aria-pressed="false"><span class="dot" style="background:var(--sun)"></span>Sun 17</button>
+    </div>
+    <p class="maphint">H is the hotel. Kenwood sits 25 minutes north by car; z&#275;phyr is 20 minutes west. Kew (Thu) and Bath (Sat) are off the edge &mdash; the dashed arrows show where you leave from.</p>
+  </div>
+</section>
+
+<h2>Day by day</h2>
+
+<article class="day">
+  <div class="dayhead"><span class="daytag" style="background:var(--wed)">Wed 13</span><h3>Land, shop, then the spa</h3><span class="theme">Arrival day for three &middot; everyone in by early afternoon</span></div>
+  <div class="slots">
+    <div class="slot"><span class="t">10:00</span><p><b>You land</b> (T5); Elizabeth line to Tottenham Court Road, five minutes' walk to Ham Yard. Drop bags. Gainey flies tonight and joins tomorrow.</p></div>
+    <div class="slot"><span class="t">11:00</span><p><span class="n" style="background:var(--wed)">2</span><b>Dover Street Market</b>, two minutes from the hotel on Haymarket &mdash; Comme des Garçons' multi-floor concept store, as much installation as shop. Then <span class="n" style="background:var(--wed)">3</span><b>Liberty</b>, the Tudor-revival department store built from old ship timbers. <b>It's January sale season</b>, which helps.<span class="tag">Shopping</span></p></div>
+    <div class="slot"><span class="t">11:50</span><p><b>Semi and Sheila land</b> (BA284, T5). Elizabeth line in, bags dropped by ~13:30. Rooms open at 3, so they meet you at Soane's.</p></div>
+    <div class="slot"><span class="t">14:00</span><p><span class="n" style="background:var(--wed)">4</span><b>Sir John Soane's Museum</b> &mdash; <span class="free">free</span>, walk-in, open Wed&ndash;Sun. An architect's house full of antiquities, mirrors and trick walls; the best interior in London and small enough for no sleep.<span class="tag">Art</span></p></div>
+    <div class="slot"><span class="t">16:00</span><p><span class="n" style="background:var(--wed)">5</span><b>Biome at Corinthia</b> &mdash; three floors of spa by Embankment, ten minutes' walk: pool, amphitheatre sauna, cold plunge, heated loungers, sleep pods, dark marble and fires. Packages from about <b>£375</b>. Three hours here and everyone's reset.<span class="tag">Spa</span> <span class="book">Book</span></p></div>
+    <div class="slot"><span class="t">20:00</span><p><b>z&#275;phyr</b>, Notting Hill &mdash; modern Greek sharing plates, airy early and buzzy by 8. Built for a group of friends catching up on night one. <span class="book">Book direct, December</span> (Sessions Arts Club is the swap if you want the more dramatic room.) Nightcap at <b>Bar Termini</b> back in Soho.<span class="tag">Dinner &middot; Dorsia</span></p></div>
+  </div>
+</article>
+
+<article class="day">
+  <div class="dayhead"><span class="daytag" style="background:var(--thu)">Thu 14</span><h3>The Heath, Kenwood, then Henry Moore at Kew</h3><span class="theme">Sculpture all day &middot; Gainey arrives &middot; fancy dinner no. 1</span></div>
+  <div class="slots">
+    <div class="slot"><span class="t">08:30</span><p><span class="n" style="background:var(--thu)">6</span><b>Parliament Hill</b> &mdash; a proper climb and the best view of London, then straight across the Heath. Wear boots; the Heath in January is mud.</p></div>
+    <div class="slot"><span class="t">09:20</span><p><b>Gainey lands</b> (T3). Elizabeth line to the hotel by about 10:45, drop bags. Kew is <b>30 minutes from Heathrow</b> (Piccadilly line to Turnham Green, then District to Kew Gardens), so if she's awake she meets you there at 13:00; if not, she sleeps and joins at 18:00.</p></div>
+    <div class="slot"><span class="t">10:00</span><p><span class="n" style="background:var(--thu)">7</span><b>Kenwood House</b> opens &mdash; <span class="free">free</span>, 10&ndash;4 in winter. Robert Adam's Library, Rembrandt's <i>Self-Portrait with Two Circles</i>, a Vermeer. On the lawn: <b>Barbara Hepworth's <i>Monolith (Empyrean)</i></b> and <b>Henry Moore's <i>Two Piece Reclining Figure No. 5</i></b>. Ninety minutes is plenty.<span class="tag">Sculpture &middot; Art</span></p></div>
+    <div class="slot"><span class="t">12:00</span><p>Walk down to <b>Hampstead Heath station</b> and take the Overground (Mildmay line, direction Richmond) <b>straight to Kew Gardens &mdash; one train, about 40 minutes</b>, no changes. Coffee and a pastry at Kew station.</p></div>
+    <div class="slot"><span class="t">13:00</span><p><span class="n" style="background:var(--thu)">26</span><b>Kew Gardens &mdash; <i>Henry Moore: Monumental Nature</i></b>. His largest outdoor show ever: <b>30 monumental bronzes set through the gardens</b>, plus 70 works on paper, models and small pieces indoors in the Shirley Sherwood Gallery. <b>Runs to 31 January 2027</b>, so it lands exactly on your dates. The Palm House and Temperate House glasshouses are the warm-up between sculptures. Gardens close around 16:00 in January with last entry an hour before, so this is the afternoon and nothing else. <span class="book">Book Kew entry online (~£22; the exhibition is included).</span><span class="tag">Sculpture &middot; Nature</span></p></div>
+    <div class="sunset">Dark by 16:20</div>
+    <div class="slot"><span class="t">16:15</span><p>District line back to the West End, 40 minutes. Freshen up.</p></div>
+    <div class="slot"><span class="t">18:00</span><p><span class="n" style="background:var(--thu)">25</span><b>The Lore of the Land</b>, Fitzrovia &mdash; Dua Lipa's pub: three floors of dark wood and odd art, ten minutes from the hotel. One drink. Gainey's re-entry point.<span class="tag">Bar</span></p></div>
+    <div class="slot"><span class="t">20:00</span><p><span class="n" style="background:var(--thu)">10</span><b>MOI</b>, Wardour St &mdash; Japanese with British produce, sushi counter and live fire in a poured-concrete room two minutes from Ham Yard. <b>Listening bar downstairs for after.</b> <span class="book">Book direct, mid-November</span><span class="tag">Dinner &middot; Dorsia</span></p></div>
+  </div>
+</article>
+
+<article class="day">
+  <div class="dayhead"><span class="daytag" style="background:var(--fri)">Fri 15</span><h3>Cambridge, then Spitalfields and Marylebone</h3><span class="theme">Day trip no. 1 &middot; 50 minutes each way &middot; the sceney dinner</span></div>
+  <div class="slots">
+    <div class="slot"><span class="t">09:30</span><p><span class="n" style="background:var(--fri)">11</span>Fast train from <b>King's Cross to Cambridge</b>, about 50 minutes.</p></div>
+    <div class="slot"><span class="t">11:00</span><p><b>Kettle's Yard</b> opens. A collector's house kept as he left it: <b>Hepworth, Ben Nicholson, Alfred Wallis, Gaudier-Brzeska</b>, sculpture on windowsills beside pebbles. This is the St Ives circle without going to Cornwall. Tue&ndash;Sun, house £14.50, <span class="book">timed tickets</span>.<span class="tag">Sculpture &middot; Art</span></p></div>
+    <div class="slot"><span class="t">13:00</span><p><b>King's College Chapel</b> for the fan vaulting (check visiting hours on the day), then the <b>Fitzwilliam Museum</b>, <span class="free">free</span>. Walk the Backs if the light is good.</p></div>
+    <div class="slot"><span class="t">15:30</span><p>Train back. Walk out of King's Cross into <span class="n" style="background:var(--fri)">11</span><b>Coal Drops Yard</b> &mdash; Victorian coal sheds that Thomas Heatherwick joined with two curving roofs that kiss in the middle. Good independent shops underneath.<span class="tag">Shopping &middot; Architecture</span></p></div>
+    <div class="slot"><span class="t">18:00</span><p><span class="n" style="background:var(--fri)">12</span><b>Dennis Severs' House</b>, Spitalfields: a silk weaver's house staged as if the family just left, visited in silence by candlelight. Fri until 9pm, <b>£25</b>. <span class="book">Book.</span><span class="tag">Art</span></p></div>
+    <div class="slot"><span class="t">20:30</span><p><span class="n" style="background:var(--fri)">23</span><b>nina</b>, Marylebone &mdash; <b>the sceney one.</b> Glitzy basement Italian, grotto rooms, music up, a see-and-be-seen crowd; Infatuation 8.6. Taleggio arancini, chicken milanese, skip the pastas. <span class="book">Dorsia, ~30 days out &mdash; reminder set for Dec 15</span><span class="tag">Fancy dinner</span></p></div>
+  </div>
+</article>
+
+<article class="day">
+  <div class="dayhead"><span class="daytag" style="background:var(--sat)">Sat 16</span><h3>The Cotswolds and Bath, then the blowout</h3><span class="theme">Day trip no. 2 &middot; villages, Georgian crescents, a hot spring on a roof &middot; fancy dinner no. 2</span></div>
+  <div class="slots">
+    <div class="slot"><span class="t">07:30</span><p><span class="n" style="background:var(--sat)">27</span>GWR from <b>Paddington to Bath Spa</b>, about 1h20 (Piccadilly or Bakerloo line from the hotel, 15 minutes). <span class="book">Advance tickets go on sale ~12 weeks out &mdash; late October &mdash; and are a third of the walk-up fare.</span> Coffee on the train.</p></div>
+    <div class="slot"><span class="t">09:00</span><p><b>Cotswolds villages, by private car from Bath station</b> &mdash; <b>Castle Combe</b> (the one from the postcards: one honey-stone street, a market cross, a brook, no shops) and <b>Lacock</b> (National Trust village, all 13th&ndash;18th-century, the abbey cloisters were Hogwarts). Both are 25 minutes from Bath and 15 from each other, so a half-day tour covers them without a rush. <b>Bath Insider Tours</b> or <b>In &amp; Beyond Bath</b> run private morning tours in winter, from about £300 for the four of you, pick-up at the station; a taxi both ways is the cheaper, less charming version. <span class="book">Book by November.</span><span class="tag">Nature &middot; Architecture</span></p></div>
+    <div class="slot"><span class="t">13:00</span><p>Back in Bath. Walk <b>the Circus</b> and the <b>Royal Crescent</b> (the best Georgian architecture in Britain), then the <b>Holburne Museum</b> at the end of Great Pulteney Street if you want a room of Gainsboroughs; <b>Milsom Street</b> and the lanes around the abbey for shops.<span class="tag">Architecture &middot; Shopping</span></p></div>
+    <div class="slot"><span class="t">15:00</span><p><b>Thermae Bath Spa</b> &mdash; the <b>open-air rooftop pool of natural hot spring water</b> over the abbey roofs, steaming into cold January air as the light goes. Two-hour session, over-16s, about £45 each. <span class="book">Book the 15:00 slot.</span><span class="tag">Spa</span></p></div>
+    <div class="slot"><span class="t">17:45</span><p>Train back, Paddington by about 19:10; ten minutes to the hotel.</p></div>
+    <div class="slot"><span class="t">19:30</span><p><span class="n" style="background:var(--sat)">16</span><b>The Connaught Bar</b> &mdash; the martini trolley comes to the table. One round.<span class="tag">Bar</span> <span class="book">Book</span></p></div>
+    <div class="slot"><span class="t">20:30</span><p><span class="n" style="background:var(--sat)">17</span><b>Ambassadors Clubhouse</b>, Heddon St &mdash; <b>the blowout.</b> JKS's Michelin-starred Punjabi in a shimmering Northern-Indian party mansion, seven minutes from the hotel. Ajwaini wild prawns from the tandoor. <span class="book">Dorsia</span> &mdash; or <b>Automat</b> on Mount St for candlelit American instead.<span class="tag">Fancy dinner</span></p></div>
+  </div>
+</article>
+
+<article class="day">
+  <div class="dayhead"><span class="daytag" style="background:var(--sun)">Sun 17</span><h3>Flowers, the Tates, concrete, a roast</h3><span class="theme">The London art day &middot; slow last night</span></div>
+  <div class="slots">
+    <div class="slot"><span class="t">09:00</span><p><span class="n" style="background:var(--sun)">18</span><b>Columbia Road Flower Market</b>, Sundays only, 8&ndash;3. The little shops along the street open too.<span class="tag">Shopping</span></p></div>
+    <div class="slot"><span class="t">10:30</span><p>Bus or cab down to <span class="n" style="background:var(--sun)">13</span><b>Tate Modern</b>, <span class="free">free</span>, opens 10. Turbine Hall, the Rothko room, then the free viewing level.<span class="tag">Art</span></p></div>
+    <div class="slot"><span class="t">12:30</span><p>The <b>Tate Boat</b> down the river to <span class="n" style="background:var(--sun)">15</span><b>Tate Britain</b>, <span class="free">free</span>: the Turners, and the national Hepworth and Moore holdings. Moore's <i>Locking Piece</i> stands outside by the water.<span class="tag">Art &middot; Sculpture</span></p></div>
+    <div class="slot"><span class="t">14:30</span><p><span class="n" style="background:var(--sun)">20</span><b>The Barbican</b> &mdash; walk the highwalks and the lake terrace. If you got tickets, the <b>Conservatory</b>: a tropical glasshouse inside the concrete, weekend afternoons only. <span class="free">Free</span> but <span class="book">released about a month ahead &mdash; set a reminder for mid-December.</span><span class="tag">Architecture</span></p></div>
+    <div class="sunset">Dark by 16:20</div>
+    <div class="slot"><span class="t">16:30</span><p>Back to Ham Yard: the in-house spa, or the bowling alley, or nothing.</p></div>
+    <div class="slot"><span class="t">19:00</span><p><span class="n" style="background:var(--sun)">19</span><b>Sunday roast at Blacklock</b>, Shoreditch &mdash; the one lunch-ish thing, moved to dinner. <span class="book">Book.</span></p></div>
+    <div class="slot"><span class="t">21:00</span><p><span class="n" style="background:var(--sun)">21</span><b>Scarfes Bar</b> at the Rosewood, Holborn: fires, velvet, caricatures on the walls, live music. A soft last night.<span class="tag">Bar</span></p></div>
+  </div>
+</article>
+
+<article class="day">
+  <div class="dayhead"><span class="daytag" style="background:var(--home)">Mon 18</span><h3>Out</h3><span class="theme">MLK Day &middot; checkout noon</span></div>
+  <div class="slots">
+    <div class="slot"><span class="t">09:00</span><p>Gainey leaves for her <b>13:30</b>. If anyone wants one more pass at <b>Liberty</b> or <b>DSM</b> in the sales, both are two minutes away and open at 10.</p></div>
+    <div class="slot"><span class="t">11:45</span><p>Semi and Sheila leave for <b>BA287 at 15:20</b>. <b>Share one car to Heathrow</b> if you're on the 15:10 United or BA189 at 16:35 &mdash; they get dropped at T5, you carry on. Or the Piccadilly line from two minutes away.</p></div>
+  </div>
+</article>
+
+<h2>The categories, and the alternates</h2>
+<div class="cgrid">
+  <div class="card"><h4>Shopping</h4><div class="meta">In the plan</div><p><b>Dover Street Market</b>, <b>Liberty</b>, <b>Coal Drops Yard</b>, <b>Columbia Road</b>, Bath's <b>Milsom Street</b>. Mid-January is the tail of the UK sales.</p><p>Dropped to make room: <b>Marylebone High Street / Daunt Books</b> &mdash; it's ten minutes from nina on Friday night if you want it; and the <b>Mayfair gallery walk</b> (Hauser &amp; Wirth, Zwirner, Gagosian &mdash; all free, all closed Sunday), which fits Wednesday between Soane's and the spa if you skip the shops.</p></div>
+  <div class="card"><h4>Sculpture</h4><div class="meta">Hepworth &amp; Moore, no Cornwall</div><p><b>Kenwood</b> and <b>Kew's Henry Moore show</b> (Thu), <b>Kettle's Yard</b> (Fri), <b>Tate Britain</b> and Moore's <i>Locking Piece</i> (Sun). That's three Moores and two Hepworths before you count the Tate.</p><p>Swap in: <b>The Line</b>, a free outdoor sculpture trail from the Olympic Park to The O2 with Gormley and Gary Hume, in place of the Barbican on Sunday.</p></div>
+  <div class="card"><h4>Spa</h4><div class="meta">Three price points</div><p><b>Biome, Corinthia</b> &mdash; the splurge, from ~£375, ten minutes' walk (Wed).</p><p><b>Thermae Bath Spa</b> &mdash; the rooftop hot spring, ~£45 (Sat).</p><p><b>Four Seasons Tower Bridge</b> &mdash; gold walls, lap pool, sound pods, day passes from ~£160.</p><p><b>Ham Yard's own spa</b> &mdash; no travel at all.</p></div>
+  <div class="card"><h4>Bars</h4><div class="meta">One a night</div><p><b>Bar Termini</b> (Wed), <b>Lore of the Land</b> (Thu), <b>Connaught Bar</b> (Sat), <b>Scarfes</b> (Sun).</p><p>Friday is free: <b>Swift</b> in Soho, upstairs for aperitivo, downstairs for the dark room.</p></div>
+</div>
+
+<h2>Further out &mdash; up to three hours</h2>
+<p class="lede" style="margin-bottom:12px">Every realistic day trip, drawn by how long it actually takes to get there. Two are now in the plan &mdash; <b>Cambridge on Friday</b> and <b>Bath + the Cotswolds on Saturday</b>. The rest are swaps, or a solo day while the others take it slow in Soho.</p>
+<div class="mapbox"><div class="radial"><svg viewBox="0 0 720 600" role="img" aria-label="Travel times from London to each day-trip option, drawn as distance from the centre">
+<rect width="720" height="600" rx="14" fill="var(--map-ground)"/>
+<circle cx="360" cy="300" r="90" fill="none" stroke="var(--line)" stroke-dasharray="4 5"/>
+<text x="427.63" y="232.37" class="ring">1h</text>
+<circle cx="360" cy="300" r="180" fill="none" stroke="var(--line)" stroke-dasharray="4 5"/>
+<text x="491.26" y="168.74" class="ring">2h</text>
+<circle cx="360" cy="300" r="270" fill="none" stroke="var(--line)" stroke-dasharray="none"/>
+<text x="554.89" y="105.11000000000001" class="ring">3h</text>
+<circle cx="360" cy="300" r="9" fill="var(--home)"/><text x="360" y="325" class="lbl" text-anchor="middle">London</text>
+<line x1="360" y1="300" x2="384" y2="227" stroke="var(--sat)" stroke-width="1.5" opacity=".55"/>
+<circle cx="384" cy="227" r="7" fill="var(--sat)" stroke="var(--sat)" stroke-width="2"/>
+<text x="395" y="225" text-anchor="start" class="lbl">Cambridge</text>
+<text x="395" y="239" text-anchor="start" class="sub">51 min · Fri · Kettle&#x27;s Yard</text>
+<line x1="360" y1="300" x2="277" y2="266" stroke="var(--fri)" stroke-width="1.5" opacity=".55"/>
+<circle cx="277" cy="266" r="7" fill="var(--fri)" stroke="var(--fri)" stroke-width="2"/>
+<text x="266" y="264" text-anchor="end" class="lbl">Oxford</text>
+<text x="266" y="278" text-anchor="end" class="sub">1h00 · Ashmolean</text>
+<line x1="360" y1="300" x2="239" y2="308" stroke="var(--sat)" stroke-width="1.5" opacity=".55"/>
+<circle cx="239" cy="308" r="7" fill="var(--sat)" stroke="var(--sat)" stroke-width="2"/>
+<text x="228" y="306" text-anchor="end" class="lbl">Bath</text>
+<text x="228" y="320" text-anchor="end" class="sub">1h21 · Sat · Thermae spa</text>
+<line x1="360" y1="300" x2="198" y2="294" stroke="var(--sat)" stroke-width="1.5" opacity=".55"/>
+<circle cx="198" cy="294" r="7" fill="var(--sat)" stroke="var(--sat)" stroke-width="2"/>
+<text x="187" y="292" text-anchor="end" class="lbl">Castle Combe</text>
+<text x="187" y="306" text-anchor="end" class="sub">1h48 · via Bath · Sat</text>
+<line x1="360" y1="300" x2="378" y2="429" stroke="var(--fri)" stroke-width="1.5" opacity=".55"/>
+<circle cx="378" cy="429" r="7" fill="var(--fri)" stroke="var(--fri)" stroke-width="2"/>
+<text x="389" y="427" text-anchor="start" class="lbl">Charleston</text>
+<text x="389" y="441" text-anchor="start" class="sub">1h27 · Bloomsbury house</text>
+<line x1="360" y1="300" x2="494" y2="314" stroke="var(--fri)" stroke-width="1.5" opacity=".55"/>
+<circle cx="494" cy="314" r="7" fill="var(--fri)" stroke="var(--fri)" stroke-width="2"/>
+<text x="505" y="312" text-anchor="start" class="lbl">Margate</text>
+<text x="505" y="326" text-anchor="start" class="sub">1h30 · Turner Contemporary</text>
+<line x1="360" y1="300" x2="222" y2="393" stroke="var(--fri)" stroke-width="1.5" opacity=".55"/>
+<circle cx="222" cy="393" r="7" fill="var(--fri)" stroke="var(--fri)" stroke-width="2"/>
+<text x="211" y="391" text-anchor="end" class="lbl">Roche Court</text>
+<text x="211" y="405" text-anchor="end" class="sub">1h51 · Sculpture park</text>
+<line x1="360" y1="300" x2="159" y2="350" stroke="var(--soft)" stroke-width="1.5" opacity=".55"/>
+<circle cx="159" cy="350" r="7" fill="var(--soft)" stroke="var(--soft)" stroke-width="2"/>
+<text x="148" y="348" text-anchor="end" class="lbl">Bruton</text>
+<text x="148" y="362" text-anchor="end" class="sub">2h18 · Hauser &amp; Wirth</text>
+<line x1="360" y1="300" x2="331" y2="91" stroke="var(--fri)" stroke-width="1.5" opacity=".55"/>
+<circle cx="331" cy="91" r="7" fill="var(--fri)" stroke="var(--fri)" stroke-width="2"/>
+<text x="320" y="89" text-anchor="end" class="lbl">Yorkshire Sculpture Park</text>
+<text x="320" y="103" text-anchor="end" class="sub">2h21 · + Hepworth Wakefield</text>
+<line x1="360" y1="300" x2="337" y2="213" stroke="var(--soft)" stroke-width="1.5" opacity=".55"/>
+<circle cx="337" cy="213" r="7" fill="var(--surface)" stroke="var(--soft)" stroke-width="2"/>
+<text x="326" y="211" text-anchor="end" class="lbl">Perry Green</text>
+<text x="326" y="225" text-anchor="end" class="sub">1h00 · Moore studios · shut till Apr</text>
+<text x="18" y="582" class="sub">Distance from centre = door-to-door travel time. Blue = in the plan. Hollow = closed in January. St Ives is off the chart at 5h+.</text>
+</svg></div></div>
+
+<div class="cgrid" style="margin-top:14px">
+  <div class="card" style="border-color:var(--sat)"><h4>Bath + Castle Combe + Lacock &mdash; in the plan, Saturday</h4><div class="meta">1h19 from Paddington &middot; villages + spa + architecture</div>
+    <p><b>Thermae Bath Spa</b> has an <b>open-air rooftop pool of naturally hot spring water</b> looking over the abbey &mdash; steaming in January air, which is the whole point. Open daily 9:00&ndash;21:30, over-16s, book a slot.</p>
+    <p>Around it: the <b>Royal Crescent</b> and <b>the Circus</b>, the Roman Baths, and good shopping on Milsom Street. The Cotswolds proper (Bibury, Stow, Bourton) are a separate 1h30 train to Moreton-in-Marsh and don't combine with Bath in a day; <b>Castle Combe and Lacock</b> are the Cotswold villages that do, 25 minutes from Bath station.</p></div>
+  <div class="card"><h4>Yorkshire Sculpture Park</h4><div class="meta">~2h20 door to door &middot; the big sculpture day</div>
+    <p>500 acres with Moore and Hepworth in open parkland, plus <b>The Hepworth Wakefield</b> in a Chipperfield building. YSP is open Tue&ndash;Sun, last entry 16:00; &pound;10&ndash;12. Wakefield Hepworth Tue&ndash;Sun, &pound;13.</p>
+    <p>07:00 from King's Cross, back by 19:00. A Jenni day, not a group day.</p></div>
+  <div class="card"><h4>Roche Court + Salisbury</h4><div class="meta">~1h50 &middot; free sculpture park</div>
+    <p>Sixty acres of Wiltshire parkland with Hepworth, Caro, Gormley, Richard Long and Phyllida Barlow. <b>Free, open seven days</b>, 11&ndash;4. Ring to ask what's installed.</p>
+    <p>Salisbury Cathedral is on the way, and <b>Stonehenge</b> is about twenty minutes from Salisbury if you want to make a full day of it.</p></div>
+  <div class="card"><h4>Charleston</h4><div class="meta">~1h30 &middot; Victoria to Lewes, then taxi</div>
+    <p>The Bloomsbury farmhouse where Vanessa Bell and Duncan Grant painted every door, wall and fireplace. Wed&ndash;Sun, 10&ndash;5, now open year-round. Lewes is a lovely old town for lunch.</p></div>
+  <div class="card"><h4>Margate</h4><div class="meta">1h27 from St Pancras</div>
+    <p><b>Turner Contemporary</b> on the sand (free), the Shell Grotto, a faded seaside old town and good oysters. Cold, windy, very photogenic in winter.</p></div>
+  <div class="card"><h4>Hauser &amp; Wirth Somerset</h4><div class="meta">~2h15 to Bruton &middot; check before going</div>
+    <p>A converted farmstead with a <b>Piet Oudolf garden</b>, outdoor sculpture and the Roth Bar. <b>Always free</b>, Wed&ndash;Sun. But the galleries close between shows over winter, so confirm what's open in January before committing. The Oudolf field is bare seedheads and structure that time of year.</p></div>
+</div>
+
+
+
+<h2>Flights &mdash; booked</h2>
+<div class="tbl"><table>
+  <tr><th>Who</th><th>Out</th><th>Back</th><th>Ref</th></tr>
+  <tr><td><b>Semi + Sheila</b></td><td><b>BA284</b> SFO Tue 12 Jan 17:25 &rarr; LHR Wed 11:50 (T5)</td><td><b>BA287</b> LHR Mon 18 Jan 15:20 &rarr; SFO 18:45</td><td>booked</td></tr>
+  <tr><td><b>Gainey</b></td><td><b>AA174</b> RDU Wed 13 Jan 20:45 &rarr; LHR Thu 09:20 (T3) &middot; Main Plus</td><td><b>AA173</b> LHR Mon 18 Jan 13:30 &rarr; RDU 17:30</td><td>booked</td></tr>
+  <tr><td><b>You</b></td><td><b>BA188</b> EWR Tue 12 Jan 21:25 &rarr; LHR Wed ~10:00 (T5)</td><td>BA189 16:35 or United 15:10</td><td><i>to book</i></td></tr>
+</table></div>
+<p class="foot" style="margin-top:8px">Everyone needs a <b>UK ETA</b> (£20, the "UK ETA" app) before boarding. Add passport details in Manage My Booking before check-in. Hotel: Ham Yard, Wed 13 &ndash; Mon 18, connecting rooms, free cancellation until noon GMT Fri 8 Jan.</p>
+
+<h2>What to book, and when</h2>
+<div class="tbl"><table>
+  <tr><th>What</th><th>For</th><th>When &middot; how</th></tr>
+  <tr><td><b>nina</b> &mdash; the sceney dinner</td><td>Fri 15, 20:30, 4</td><td><b>Dorsia</b>, ~30 days out &middot; reminder set Dec 15</td></tr>
+  <tr><td><b>Ambassadors Clubhouse</b> &mdash; the blowout</td><td>Sat 16, 20:30, 4</td><td><b>Dorsia</b>, same window</td></tr>
+  <tr><td><b>MOI</b></td><td>Thu 14, 20:00, 4</td><td>Direct, mid-November</td></tr>
+  <tr><td><b>z&#275;phyr</b></td><td>Wed 13, 20:00, 4</td><td>Direct, early December</td></tr>
+    <tr><td><b>Blacklock Shoreditch</b> roast</td><td>Sun 17, 19:00</td><td>Direct, December</td></tr>
+  <tr><td><b>GWR Paddington &rarr; Bath Spa</b>, return</td><td>Sat 16, 07:30 out / 17:45 back</td><td>Advance fares from ~late October (12 weeks out)</td></tr>
+<tr><td><b>Cotswolds villages private tour</b> (Bath Insider / In &amp; Beyond Bath)</td><td>Sat 16, 09:00, 4</td><td>Direct, by November</td></tr>
+<tr><td><b>Thermae Bath Spa</b> rooftop</td><td>Sat 16, 15:00, 4</td><td>Direct, December</td></tr>
+<tr><td><b>Kew Gardens</b> entry (Moore included)</td><td>Thu 14, 13:00, 4</td><td>Online, any time</td></tr>
+  <tr><td><b>Biome at Corinthia</b></td><td>Wed 13, 16:00, 4</td><td>Direct, December</td></tr>
+  <tr><td><b>The Connaught Bar</b></td><td>Sat 16, 19:30</td><td>Direct, December</td></tr>
+  <tr><td><b>Dennis Severs' House</b> Silent Night</td><td>Fri 15, 18:00</td><td>Direct, December</td></tr>
+  <tr><td><b>Kettle's Yard</b> house tickets</td><td>Fri 15, 11:00</td><td>When released</td></tr>
+  <tr><td><b>Barbican Conservatory</b></td><td>Sun 17</td><td>Mid-December, the day tickets drop</td></tr>
+  <tr><td>Backups: <b>Automat</b>, <b>ALTA</b>, <b>Sessions Arts Club</b>, <b>Dorian</b></td><td>&mdash;</td><td>All easy direct bookings</td></tr>
+</table></div>
+<p class="foot" style="margin-top:8px"><b>Dua Lipa's list, for reference:</b> Fonda (Mayfair, Mexican), Ida (Queen's Park, Italian), Urchin (Japanese), Canteen (Notting Hill deli), Quality Chop House (Farringdon steak), Mountain (Soho, vermouth on tap &mdash; three minutes from the hotel, walk in for a pre-dinner drink), The Lore of the Land (Fitzrovia pub, Thursday), The Hero (Maida Vale pub, if you're nearby).</p>
+<p class="foot"><b>Henry Moore Studios &amp; Gardens</b> is only an hour away but closed until 1 April, and St Ives is 5h+ each way. Train times are fastest scheduled services; check the actual January timetable and watch for weekend engineering works. Hours are as currently published; recheck everything in December. Sources: <a href="https://www.corinthia.com/en-gb/london/spa-at-corinthia-london/">Corinthia spa</a>, <a href="https://luxurylondon.co.uk/wellbeing/beauty/best-spas-and-spa-days-in-london/">Luxury London spa guide</a>, <a href="https://thenudge.com/sessions-arts-club/">Sessions Arts Club</a>, <a href="https://www.thegoodfoodguide.co.uk/restaurant/dorian/id/59242">Dorian</a>, <a href="https://www.hot-dinners.com/Features/Hot-Dinners-recommends/hot-right-now-london-s-hottest-restaurants">Hot Dinners</a>, <a href="https://www.kettlesyard.cam.ac.uk/plan-your-visit/">Kettle's Yard</a>, <a href="https://www.english-heritage.org.uk/visit/places/kenwood/">Kenwood</a>, <a href="https://www.thermaebathspa.com/opening-times">Thermae Bath Spa</a>, <a href="https://www.gwr.com/stations-and-destinations/popular-routes/london-to-bath">GWR to Bath</a>, <a href="https://henry-moore.org/whats-on/henry-moore-monumental-nature/">Henry Moore: Monumental Nature at Kew</a>, <a href="https://www.kew.org/kew-gardens/visit-kew-gardens/opening-and-closing-times">Kew hours</a>, <a href="https://www.bathinsidertours.co.uk/lacock-and-castle-combe-tour">Bath Insider Tours</a>, <a href="https://www.hauserwirth.com/locations/10068-hauser-wirth-somerset/">Hauser &amp; Wirth Somerset</a>, <a href="https://ysp.org.uk/visit">YSP</a>.</p>
+</main>
+<footer class="site"><b>#TangGang</b> · a private page for the bridesmaids. Hours, prices and links were right when captured — recheck before you book or buy.</footer>
+<script>
+(function(){var svg=document.querySelector('.mapbox svg'),btns=document.querySelectorAll('.legend button');
+btns.forEach(function(b){b.addEventListener('click',function(){var d=b.getAttribute('data-day');
+btns.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+svg.setAttribute('class',d==='all'?'':'filtered f-'+d);});});})();</script>
+</body></html>
