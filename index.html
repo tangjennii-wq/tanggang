@@ -3,131 +3,121 @@
 <meta name="robots" content="noindex, nofollow">
 <title>#TangGang</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fff;--ink:#111214;--muted:#5b5e66;--soft:#8a8d95;--line:#e4e4e7;--tint:#f7f7f5;--surface:#fff;
-  --map-ground:#f3f3ef;--park:#dfe9d8;--river:#bcd3e6;
-  --home:#111214;--wed:#b3261e;--thu:#1f7a45;--fri:#a86400;--sat:#2456a6;--sun:#7a3b9c;
+:root{--bg:#fff;--ink:#282828;--muted:#676767;--soft:#9a9a9a;--line:#e9e9e9;--tint:#f4f4f4;--surface:#fff;--r:14px;
+  --home:#282828;--wed:#b3261e;--thu:#1f7a45;--fri:#a86400;--sat:#2456a6;--sun:#7a3b9c;
   --wine:#6b1d2b;--green:#2f5d3a;--navy:#1f2f5c;--black:#151516;--purple:#5b3a6e;--pastel:#b9c6d8;--other:#8a7f78}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Source Serif 4",Georgia,"Iowan Old Style",serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
 a{color:inherit}
-.crest{text-align:center;padding:38px 16px 0}
-.crest .name{display:block;font-size:clamp(34px,6vw,58px);font-weight:900;letter-spacing:-.04em;line-height:1;text-decoration:none}
-.crest .sub{display:block;margin-top:10px;font-size:11.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--soft)}
-nav.top{display:flex;justify-content:center;gap:6px;margin:26px auto 0;padding:0 16px 0;border-bottom:1px solid var(--ink)}
-nav.top a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:10px 16px 12px;margin-bottom:-1px;border-bottom:3px solid transparent;color:var(--muted)}
+.sans{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif}
+.mono{font-family:"Chakra Petch",ui-monospace,monospace}
+/* header: nav row top-right, wordmark centred, compact */
+nav.top{display:flex;justify-content:flex-end;gap:26px;padding:14px 28px 0;font-family:"Chakra Petch",sans-serif;font-weight:500;font-size:15px;letter-spacing:.1em}
+nav.top a{text-decoration:none;color:var(--muted);padding:2px 0;border-bottom:1.5px solid transparent}
 nav.top a:hover{color:var(--ink)}
 nav.top a.on{color:var(--ink);border-bottom-color:var(--ink)}
-.wrap{max-width:1180px;margin:0 auto;padding:36px 16px 70px}
-.narrow{max-width:980px}
-h1{font-size:clamp(30px,4.4vw,48px);line-height:1.02;letter-spacing:-.03em;margin:0 0 12px;text-wrap:balance}
-.lede{font-size:17px;color:var(--muted);max-width:72ch;margin:0 0 20px}
-h2{font-size:22px;letter-spacing:-.015em;margin:40px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--ink)}
-.kicker{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--soft);margin:0 0 8px}
-footer.site{border-top:1px solid var(--line);margin-top:30px;padding:18px 16px 50px;text-align:center;color:var(--soft);font-size:12.5px}
-footer.site b{color:var(--ink)}
+.crest{text-align:center;padding:4px 16px 0}
+.crest .name{display:inline-block;font-family:"Chakra Petch",sans-serif;font-weight:500;font-size:clamp(28px,4.6vw,46px);letter-spacing:.18em;text-transform:uppercase;line-height:1;text-decoration:none;
+  background:linear-gradient(100deg,#8c8c8c 0%,#c4c4c4 45%,#8a8a8a 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.crest .sub{display:inline-flex;align-items:center;gap:8px;margin:8px auto 0;font-family:"Chakra Petch",sans-serif;font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);background:var(--tint);border-radius:999px;padding:4px 12px}
+.wrap{max-width:1120px;margin:0 auto;padding:22px 20px 60px}
+.narrow{max-width:800px}
+h1{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;font-size:clamp(28px,3.4vw,38px);line-height:1.15;letter-spacing:-.01em;margin:0 0 10px;text-wrap:balance}
+.lede{font-size:17px;color:var(--ink);max-width:66ch;margin:0 0 14px}
+h2{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;font-size:24px;letter-spacing:-.01em;margin:36px 0 10px;padding:0;border:0}
+.kicker{font-family:"Chakra Petch",sans-serif;font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin:0 0 6px}
+footer.site{margin-top:30px;padding:18px 16px 44px;text-align:center;color:var(--soft);font-size:13.5px}
+footer.site b{color:var(--muted);font-family:"Chakra Petch",sans-serif;letter-spacing:.1em;text-transform:uppercase;font-weight:500}
 /* cover */
-.cover{max-width:980px;margin:0 auto;padding:50px 16px 70px}
-.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:28px}
-.tile{display:block;text-decoration:none;border:1px solid var(--ink);padding:26px 24px 24px;position:relative;min-height:220px;transition:background .15s}
-.tile:hover{background:var(--ink);color:var(--bg)}
-.tile .k{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;opacity:.6}
-.tile h2{border:0;margin:10px 0 8px;font-size:34px;letter-spacing:-.03em;padding:0}
-.tile p{margin:0;opacity:.75;max-width:40ch}
-.tile .go{position:absolute;right:22px;bottom:18px;font-size:22px}
+.cover{max-width:800px;margin:0 auto;padding:26px 20px 60px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:22px}
+.tile{display:block;text-decoration:none;background:var(--tint);border-radius:var(--r);padding:22px 22px 20px;position:relative;min-height:190px;transition:background .15s}
+.tile:hover{background:#ebebeb}
+.tile .k{font-family:"Chakra Petch",sans-serif;font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--soft)}
+.tile h2{margin:8px 0 6px;font-size:30px}
+.tile p{margin:0;color:var(--muted);max-width:40ch;font-size:16px}
+.tile .go{position:absolute;right:20px;bottom:14px;font-size:22px;color:var(--muted)}
 /* rule cards + filters (outfits) */
-.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:22px 0 0}
-.rulecard{background:var(--tint);border:1px solid var(--line);padding:14px 16px}
-.rulecard b{display:block;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin-bottom:5px}
-.rulecard p{margin:0;font-size:14.5px}
-.filters{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 8px;position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:5;border-bottom:1px solid var(--line)}
-.fbtn{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:6px 13px;font:inherit;font-size:13px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
-.fbtn i{width:11px;height:11px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.12)}
-.fbtn.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.subhead{font-size:22px;letter-spacing:-.015em;margin:36px 0 4px;padding-bottom:6px;border-bottom:1px solid var(--ink)}
-.sub{color:var(--muted);margin:0 0 16px;font-size:14px}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:14px 0 0}
+.rulecard{background:var(--tint);border-radius:var(--r);padding:14px 16px}
+.rulecard b{display:block;font-family:"Chakra Petch",sans-serif;font-weight:500;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin-bottom:5px}
+.rulecard p{margin:0;font-size:15.5px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 4px;position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:5}
+.fbtn{border:0;background:var(--tint);color:var(--ink);border-radius:999px;padding:7px 14px;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13.5px;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
+.fbtn i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.fbtn.on{background:var(--ink);color:var(--bg)}
+.subhead{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;font-size:24px;margin:34px 0 2px;padding:0;border:0}
+.sub{color:var(--muted);margin:0 0 14px;font-size:15.5px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px 18px}
 @media (max-width:1000px){.grid{grid-template-columns:repeat(3,1fr)}}
-@media (max-width:640px){.grid{grid-template-columns:repeat(2,1fr);gap:12px}}
-.dcard{display:flex;flex-direction:column;border:1px solid var(--line);background:var(--surface);break-inside:avoid}
-.dcard .shot{display:block;aspect-ratio:3/4;overflow:hidden;background:var(--tint)}
+@media (max-width:640px){.grid{grid-template-columns:repeat(2,1fr);gap:16px 12px}}
+.dcard{display:flex;flex-direction:column;break-inside:avoid}
+.dcard .shot{display:block;aspect-ratio:3/4;overflow:hidden;background:var(--tint);border-radius:var(--r)}
 .dcard img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .3s}
 .dcard:hover img{transform:scale(1.02)}
-.in{padding:12px 13px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
-.top{display:flex;align-items:center;gap:8px}
-.num{font-size:12px;color:var(--soft);font-weight:700;font-variant-numeric:tabular-nums}
-.swatch{width:13px;height:13px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.15)}
-.price{margin-left:auto;font-weight:700}
-.dcard h3{margin:0;font-size:16px;line-height:1.25;letter-spacing:-.01em}
+.in{padding:10px 2px 0;display:flex;flex-direction:column;gap:5px;flex:1}
+.top{display:flex;align-items:center;gap:8px;font-family:"Chakra Petch",sans-serif}
+.num{font-size:12px;color:var(--soft);letter-spacing:.08em}
+.swatch{width:12px;height:12px;border-radius:50%;display:inline-block}
+.price{margin-left:auto;font-size:14px;color:var(--muted);letter-spacing:.04em}
+.dcard h3{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:500;font-size:16px;line-height:1.3}
 .dcard h3 a{text-decoration:none}.dcard h3 a:hover{text-decoration:underline}
-.brand{margin:0;color:var(--muted);font-size:13px}
+.brand{margin:0;color:var(--muted);font-size:14px}
 .tags{display:flex;flex-wrap:wrap;gap:5px}
-.tag{font-size:11px;border:1px solid var(--line);padding:2px 7px;color:var(--muted);letter-spacing:.02em}
-.note{margin:2px 0 0;font-size:13.5px;font-style:italic}
-.link{margin-top:auto;padding-top:8px;font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
-.link:hover{text-decoration:underline}
-.notes ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
-.notes li{margin:5px 0}
-.notes li b{color:var(--ink)}
+.tag{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:11.5px;background:var(--tint);border-radius:999px;padding:3px 9px;color:var(--muted)}
+.note{margin:2px 0 0;font-size:15px;font-style:italic}
+.link{margin-top:auto;padding-top:6px;font-family:"Chakra Petch",sans-serif;font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+.link:hover{color:var(--ink)}
+.notes ul{margin:8px 0 0;padding-left:20px;color:var(--muted)}
+.notes li{margin:6px 0}
+.notes li b{color:var(--ink);font-weight:600}
 /* london */
-.cats{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px}
-.cat{font-size:12px;font-weight:600;border:1px solid var(--line);padding:3px 10px;border-radius:999px;color:var(--muted)}
-.mapbox{border:1px solid var(--line);padding:10px;background:var(--surface)}
-.mapbox svg{display:block;width:100%;height:auto;max-height:78vh}
-.mapbox .area{font-size:13px;fill:var(--soft);text-anchor:middle;font-style:italic}
-.mapbox .river{fill:var(--sat);opacity:.7}
-.mapbox .hood{font-size:11px;letter-spacing:.14em;fill:var(--soft);text-anchor:middle;font-weight:700;opacity:.8}
-.mapbox .num{font-size:11px;font-weight:700;fill:var(--surface);text-anchor:middle}
-.mapbox .lbl{font-size:12.5px;font-weight:600;fill:var(--ink);paint-order:stroke;stroke:var(--map-ground);stroke-width:3.5px}
-.mapbox .sub{font-size:11px;fill:var(--muted);margin:0}
-.mapbox .ring{font-size:11px;fill:var(--soft);font-weight:700}
-.radial{max-width:720px;margin:0 auto}
-.pin{cursor:pointer}.pin:focus-visible circle{stroke:var(--ink);stroke-width:3}
-svg.filtered .pin,svg.filtered .pin-fri,svg.filtered .pin-thu,svg.filtered .pin-sat{opacity:.14}
-svg.filtered.f-wed .pin-wed,svg.filtered.f-thu .pin-thu,svg.filtered.f-fri .pin-fri,svg.filtered.f-sat .pin-sat,svg.filtered.f-sun .pin-sun,svg.filtered .pin-home{opacity:1}
-.legend{display:flex;flex-wrap:wrap;gap:8px;margin:10px 2px 2px}
-.legend button{font:inherit;font-size:12.5px;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 11px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
-.legend button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.legend .dot{width:10px;height:10px;border-radius:50%;display:inline-block}
-.maphint{font-size:12.5px;color:var(--muted);margin:8px 2px 0}
-.day{border:1px solid var(--line);margin-top:14px;background:var(--surface)}
-.dayhead{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding:14px 16px 10px;border-bottom:1px solid var(--line)}
-.daytag{color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px}
-.dayhead h3{margin:0;font-size:19px;letter-spacing:-.015em}
-.theme{color:var(--soft);font-size:13px;margin-left:auto}
-.slots{padding:6px 16px 10px}
-.slot{display:grid;grid-template-columns:62px 1fr;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line)}
-.slot:last-child{border-bottom:0}
-.slot .t{font-weight:700;font-variant-numeric:tabular-nums;color:var(--muted);font-size:13.5px;padding-top:2px}
+.cats{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.cat{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12.5px;background:var(--tint);padding:4px 11px;border-radius:999px;color:var(--muted)}
+.mapbox{border-radius:var(--r);overflow:hidden;background:var(--tint);margin-top:16px}
+.mapbox iframe{display:block;width:100%;height:440px;border:0}
+.maphint{font-size:14px;color:var(--muted);margin:8px 2px 0}
+.day{background:var(--tint);border-radius:var(--r);margin-top:14px}
+.dayhead{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding:16px 18px 8px}
+.daytag{font-family:"Chakra Petch",sans-serif;color:#fff;font-size:11.5px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;padding:3px 9px;border-radius:999px}
+.dayhead h3{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;font-size:21px}
+.theme{color:var(--soft);font-size:14px;margin-left:auto;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif}
+.slots{padding:4px 18px 12px}
+.slot{display:grid;grid-template-columns:58px 1fr;gap:12px;padding:9px 0;border-top:1px solid #e4e4e4}
+.slot:first-child{border-top:0}
+.slot .t{font-family:"Chakra Petch",sans-serif;font-weight:500;color:var(--muted);font-size:13.5px;padding-top:3px;letter-spacing:.04em}
 .slot p{margin:0}
-.slot .n{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;color:#fff;font-size:10.5px;font-weight:700;margin-right:6px;vertical-align:1px}
-.slot .tag{display:inline-block;margin-left:8px;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--line);padding:1px 6px;color:var(--soft)}
-.free{color:var(--thu);font-weight:700}
-.book{color:var(--wed);font-weight:700}
-.sunset{text-align:center;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);padding:8px 0 2px}
-.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
-.card{border:1px solid var(--line);padding:14px 16px;background:var(--surface)}
-.card h4{margin:0 0 2px;font-size:16px;letter-spacing:-.01em}
-.card .meta{font-size:12px;color:var(--soft);margin-bottom:8px;letter-spacing:.04em;text-transform:uppercase;font-weight:600}
-.card p{margin:6px 0 0;font-size:14px;color:var(--muted)}
+.slot .n{display:none}
+.slot .tag{display:inline-block;margin-left:8px;font-family:"Chakra Petch",sans-serif;font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;background:#fff;padding:2px 8px;border-radius:999px;color:var(--soft)}
+.free{color:var(--thu);font-weight:600}
+.book{color:var(--wed);font-weight:600}
+.sunset{text-align:center;font-family:"Chakra Petch",sans-serif;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);padding:8px 0 2px}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.card{background:var(--tint);border-radius:var(--r);padding:16px 18px}
+.card h4{margin:0 0 2px;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:500;font-size:16px}
+.card .meta{font-family:"Chakra Petch",sans-serif;font-size:11.5px;color:var(--soft);margin-bottom:8px;letter-spacing:.1em;text-transform:uppercase}
+.card p{margin:6px 0 0;font-size:15px;color:var(--muted)}
 .card p b,.card p i{color:var(--ink)}
-.tbl{overflow-x:auto}
-table{border-collapse:collapse;width:100%;font-size:14px}
-th{text-align:left;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);font-weight:700;padding:8px 10px;border-bottom:1px solid var(--ink)}
-td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-.foot{font-size:13px;color:var(--muted)}
+.tbl{overflow-x:auto;background:var(--tint);border-radius:var(--r);padding:6px 14px}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th{text-align:left;font-family:"Chakra Petch",sans-serif;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);font-weight:500;padding:10px 8px;border-bottom:1px solid #e0e0e0}
+td{padding:10px 8px;border-bottom:1px solid #e4e4e4;vertical-align:top}
+tr:last-child td{border-bottom:0}
+.foot{font-size:14px;color:var(--muted)}
 .foot a{color:var(--muted)}
-@media print{nav.top,.filters,.legend{display:none}.wrap{padding:0}.grid{grid-template-columns:repeat(4,1fr);gap:8px}.dcard{page-break-inside:avoid}.link{display:none}a{color:inherit;text-decoration:none}}
+@media (max-width:640px){nav.top{justify-content:center;gap:18px;padding:12px 12px 0;font-size:13.5px}.mapbox iframe{height:320px}}
+@media print{nav.top,.filters{display:none}.wrap{padding:0}.grid{grid-template-columns:repeat(4,1fr);gap:8px}.dcard{page-break-inside:avoid}.link{display:none}a{color:inherit;text-decoration:none}}
 </style></head><body>
-<header class="crest"><a class="name" href="index.html">#TangGang</a><span class="sub">Sam + Jenni · 3.20.27</span></header>
 <nav class="top"><a href="index.html" class="on">Home</a><a href="london.html">London</a><a href="outfits.html">Outfits</a></nav>
+<header class="crest"><a class="name" href="index.html">#TangGang</a><br><span class="sub">Sam + Jenni · 3.20.27</span></header>
 
 <main class="cover">
   <p class="kicker">The bachelorette, in two parts</p>
   <h1>Two things to plan for, one place to find them.</h1>
-  <p class="lede">London in January is the trip. March is the wedding. Everything the four of you need for either is on the two pages below — itinerary, map, what to book and when; dress direction, the inspo board, and ordering deadlines.</p>
+  <p class="lede">London in January is the trip. March is the wedding. Everything the four of you need for either is on the two pages below — itinerary, what to book and when; dress direction, the inspo board, and ordering deadlines.</p>
   <div class="tiles">
     <a class="tile" href="london.html"><span class="k">Wed 13 – Mon 18 January 2027</span><h2>London</h2><p>Five nights at Ham Yard, Soho. Sculpture, spas, two day trips, two fancy dinners, a bar a night.</p><span class="go">→</span></a>
     <a class="tile" href="outfits.html"><span class="k">Saturday 20 March 2027</span><h2>Outfits</h2><p>Bridesmaid dress inspo: the palette, the rules, 32 dresses sorted by colour, and when to order.</p><span class="go">→</span></a>
