@@ -79,7 +79,9 @@ h2{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial
 .jump{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px}
 .jump a{font-family:"Chakra Petch",sans-serif;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;background:var(--tint);border-radius:999px;padding:9px 13px;color:var(--muted)}
 .jump a:hover{color:var(--ink)}
-.maphint{font-size:14px;color:var(--muted);margin:8px 2px 0}
+.maphint{font-size:14px;color:var(--muted);margin:10px 2px 0;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.maplink{display:inline-block;background:var(--ink);color:var(--bg);text-decoration:none;border-radius:999px;padding:10px 16px;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:500}
+.maplink:hover{background:#000}
 .day{background:var(--tint);border-radius:var(--r);margin-top:14px;scroll-margin-top:16px}
 .dayhead{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding:16px 18px 8px}
 .daytag{font-family:"Chakra Petch",sans-serif;color:#fff;font-size:11.5px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;padding:3px 9px;border-radius:999px}
@@ -126,7 +128,7 @@ tr:last-child td{border-bottom:0}
 </div>
 
 <section><div class="mapbox"><iframe src="https://www.google.com/maps?q=Ham+Yard+Hotel,+1+Ham+Yard,+London&z=13&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of London centred on Ham Yard Hotel"></iframe></div>
-<p class="maphint">Centred on Ham Yard. Every stop below is named exactly as it appears in Google Maps — search it, or use the saved list.</p></section>
+<p class="maphint"><a class="maplink" href="https://maps.app.goo.gl/yyXfZtA1AmYg9LiF6" target="_blank" rel="noopener">Open the saved list in Google Maps &#8599;</a> 52 places, every stop below with its day and time in the note. Save it to your own Maps and the pins follow you around London.</p></section>
 
 <h2>Day by day</h2>
 <div class="jump"><a href="#wed">Wed</a><a href="#thu">Thu</a><a href="#fri">Fri</a><a href="#sat">Sat</a><a href="#sun">Sun</a><a href="#mon">Mon</a><a href="#flights">Flights</a><a href="#book">What to book</a></div>
