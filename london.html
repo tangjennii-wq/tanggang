@@ -3,9 +3,9 @@
 <meta name="robots" content="noindex, nofollow">
 <title>London · #TangGang</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500&family=Syne:wght@800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500&family=Figtree:wght@800;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fff;--ink:#282828;--muted:#676767;--soft:#9a9a9a;--line:#e9e9e9;--tint:#f4f4f4;--surface:#fff;--r:14px;
+:root{--bg:#fff;--ink:#282828;--muted:#676767;--soft:#7a7a7a;--line:#e9e9e9;--tint:#f4f4f4;--surface:#fff;--r:14px;
   --home:#282828;--wed:#b3261e;--thu:#1f7a45;--fri:#a86400;--sat:#2456a6;--sun:#7a3b9c;
   --wine:#6b1d2b;--green:#2f5d3a;--navy:#1f2f5c;--black:#151516;--purple:#5b3a6e;--pastel:#b9c6d8;--other:#8a7f78}
 *{box-sizing:border-box}
@@ -15,39 +15,37 @@ a{color:inherit}
 .sans{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif}
 .mono{font-family:"Chakra Petch",ui-monospace,monospace}
 /* header: nav row top-right, wordmark centred, compact */
-nav.top{display:flex;justify-content:flex-end;gap:26px;padding:14px 28px 0;font-family:"Chakra Petch",sans-serif;font-weight:500;font-size:15px;letter-spacing:.1em}
-nav.top a{text-decoration:none;color:var(--muted);padding:2px 0;border-bottom:1.5px solid transparent}
+nav.top{display:flex;justify-content:flex-end;gap:14px;max-width:1120px;margin:0 auto;padding:6px 20px 0;font-family:"Chakra Petch",sans-serif;font-weight:500;font-size:15px;letter-spacing:.1em}
+nav.top a{text-decoration:none;color:var(--muted);padding:12px 6px 10px;border-bottom:1.5px solid transparent}
 nav.top a:hover{color:var(--ink)}
 nav.top a.on{color:var(--ink);border-bottom-color:var(--ink)}
 .crest{text-align:center;padding:6px 16px 0}
-.crest .name{display:inline-block;font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(34px,5.6vw,60px);letter-spacing:-.02em;text-transform:uppercase;line-height:1;text-decoration:none;color:#000}
+.crest .name{display:inline-block;max-width:100%;font-family:"Figtree",sans-serif;font-weight:900;font-size:clamp(34px,9vw,60px);letter-spacing:-.03em;text-transform:uppercase;line-height:1;text-decoration:none;color:#000;white-space:nowrap}
 .wrap{max-width:1120px;margin:0 auto;padding:22px 20px 60px}
 .narrow{max-width:800px}
 h1{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;font-size:clamp(28px,3.4vw,38px);line-height:1.15;letter-spacing:-.01em;margin:0 0 10px;text-wrap:balance}
 .lede{font-size:17px;color:var(--ink);max-width:66ch;margin:0 0 14px}
 h2{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;font-size:24px;letter-spacing:-.01em;margin:36px 0 10px;padding:0;border:0}
 .kicker{font-family:"Chakra Petch",sans-serif;font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin:0 0 6px}
-footer.site{margin-top:30px;padding:18px 16px 44px;text-align:center;color:var(--soft);font-size:13.5px}
-footer.site b{color:var(--muted);font-family:"Chakra Petch",sans-serif;letter-spacing:.1em;text-transform:uppercase;font-weight:500}
 /* cover */
 .cover{max-width:800px;margin:0 auto;padding:26px 20px 60px}
 .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:22px}
-.tile{display:block;text-decoration:none;background:var(--tint);border-radius:var(--r);padding:22px 22px 20px;position:relative;min-height:190px;transition:background .15s}
+.tile{display:block;text-decoration:none;background:var(--tint);border-radius:var(--r);padding:22px 22px 48px;position:relative;min-height:170px;transition:background .15s}
 .tile:hover{background:#ebebeb}
 .tile .k{font-family:"Chakra Petch",sans-serif;font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--soft)}
 .tile h2{margin:8px 0 6px;font-size:30px}
 .tile p{margin:0;color:var(--muted);max-width:40ch;font-size:16px}
 .tile .go{position:absolute;right:20px;bottom:14px;font-size:22px;color:var(--muted)}
 /* rule cards + filters (outfits) */
-.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:14px 0 0}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:14px 0 0}
 .rulecard{background:var(--tint);border-radius:var(--r);padding:14px 16px}
 .rulecard b{display:block;font-family:"Chakra Petch",sans-serif;font-weight:500;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin-bottom:5px}
 .rulecard p{margin:0;font-size:15.5px}
-.filters{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 4px;position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:5}
-.fbtn{border:0;background:var(--tint);color:var(--ink);border-radius:999px;padding:7px 14px;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13.5px;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 4px;position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:5;box-shadow:0 1px 0 var(--line)}
+.fbtn{border:0;background:var(--tint);color:var(--ink);border-radius:999px;padding:10px 14px;min-height:40px;flex:0 0 auto;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13.5px;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
 .fbtn i{width:10px;height:10px;border-radius:50%;display:inline-block}
 .fbtn.on{background:var(--ink);color:var(--bg)}
-.subhead{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;font-size:24px;margin:34px 0 2px;padding:0;border:0}
+.subhead{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;font-size:24px;margin:34px 0 2px;padding:0;border:0;scroll-margin-top:70px}
 .sub{color:var(--muted);margin:0 0 14px;font-size:15.5px}
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px 18px}
 @media (max-width:1000px){.grid{grid-template-columns:repeat(3,1fr)}}
@@ -65,9 +63,10 @@ footer.site b{color:var(--muted);font-family:"Chakra Petch",sans-serif;letter-sp
 .dcard h3 a{text-decoration:none}.dcard h3 a:hover{text-decoration:underline}
 .brand{margin:0;color:var(--muted);font-size:14px}
 .tags{display:flex;flex-wrap:wrap;gap:5px}
-.tag{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:11.5px;background:var(--tint);border-radius:999px;padding:3px 9px;color:var(--muted)}
+.tag{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12.5px;background:var(--tint);border-radius:999px;padding:3px 9px;color:var(--muted)}
+.tag.warn{background:#f9ebec;color:var(--wine)}
 .note{margin:2px 0 0;font-size:15px;font-style:italic}
-.link{margin-top:auto;padding-top:6px;font-family:"Chakra Petch",sans-serif;font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+.link{margin-top:auto;padding:10px 0 4px;font-family:"Chakra Petch",sans-serif;font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
 .link:hover{color:var(--ink)}
 .notes ul{margin:8px 0 0;padding-left:20px;color:var(--muted)}
 .notes li{margin:6px 0}
@@ -77,45 +76,52 @@ footer.site b{color:var(--muted);font-family:"Chakra Petch",sans-serif;letter-sp
 .cat{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12.5px;background:var(--tint);padding:4px 11px;border-radius:999px;color:var(--muted)}
 .mapbox{border-radius:var(--r);overflow:hidden;background:var(--tint);margin-top:16px}
 .mapbox iframe{display:block;width:100%;height:440px;border:0}
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px}
+.jump a{font-family:"Chakra Petch",sans-serif;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;background:var(--tint);border-radius:999px;padding:9px 13px;color:var(--muted)}
+.jump a:hover{color:var(--ink)}
 .maphint{font-size:14px;color:var(--muted);margin:8px 2px 0}
-.day{background:var(--tint);border-radius:var(--r);margin-top:14px}
+.day{background:var(--tint);border-radius:var(--r);margin-top:14px;scroll-margin-top:16px}
 .dayhead{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding:16px 18px 8px}
 .daytag{font-family:"Chakra Petch",sans-serif;color:#fff;font-size:11.5px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;padding:3px 9px;border-radius:999px}
 .dayhead h3{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;font-size:21px}
-.theme{color:var(--soft);font-size:14px;margin-left:auto;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif}
+.theme{color:var(--soft);font-size:14px;flex-basis:100%;margin:2px 0 0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif}
 .slots{padding:4px 18px 12px}
 .slot{display:grid;grid-template-columns:58px 1fr;gap:12px;padding:9px 0;border-top:1px solid #e4e4e4}
 .slot:first-child{border-top:0}
 .slot .t{font-family:"Chakra Petch",sans-serif;font-weight:500;color:var(--muted);font-size:13.5px;padding-top:3px;letter-spacing:.04em}
 .slot p{margin:0}
 .slot .n{display:none}
-.slot .tag{display:inline-block;margin-left:8px;font-family:"Chakra Petch",sans-serif;font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;background:#fff;padding:2px 8px;border-radius:999px;color:var(--soft)}
+.slot .tag{display:inline-block;margin-left:8px;font-family:"Chakra Petch",sans-serif;font-size:11.5px;text-transform:uppercase;letter-spacing:.1em;background:#fff;padding:2px 8px;border-radius:999px;color:var(--soft)}
 .free{color:var(--thu);font-weight:600}
 .book{color:var(--wed);font-weight:600}
 .sunset{text-align:center;font-family:"Chakra Petch",sans-serif;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);padding:8px 0 2px}
 .cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
 .card{background:var(--tint);border-radius:var(--r);padding:16px 18px}
+.card.plan{border:2px solid var(--sat);grid-column:1/-1}
 .card h4{margin:0 0 2px;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:500;font-size:16px}
 .card .meta{font-family:"Chakra Petch",sans-serif;font-size:11.5px;color:var(--soft);margin-bottom:8px;letter-spacing:.1em;text-transform:uppercase}
 .card p{margin:6px 0 0;font-size:15px;color:var(--muted)}
 .card p b,.card p i{color:var(--ink)}
-.tbl{overflow-x:auto;background:var(--tint);border-radius:var(--r);padding:6px 14px}
+.tbl{overflow-x:auto;-webkit-overflow-scrolling:touch;background:var(--tint);border-radius:var(--r);padding:6px 14px}
+.tbl table{min-width:560px}
+h2{scroll-margin-top:16px}
 table{border-collapse:collapse;width:100%;font-size:15px}
 th{text-align:left;font-family:"Chakra Petch",sans-serif;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);font-weight:500;padding:10px 8px;border-bottom:1px solid #e0e0e0}
 td{padding:10px 8px;border-bottom:1px solid #e4e4e4;vertical-align:top}
 tr:last-child td{border-bottom:0}
 .foot{font-size:14px;color:var(--muted)}
 .foot a{color:var(--muted)}
-@media (max-width:640px){nav.top{justify-content:center;gap:18px;padding:12px 12px 0;font-size:13.5px}.mapbox iframe{height:320px}}
+@media (max-width:640px){nav.top{justify-content:center;gap:6px;padding:4px 8px 0;font-size:13.5px}.mapbox iframe{height:220px}.filters{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px -20px 4px;padding:10px 20px;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.slot{grid-template-columns:48px 1fr;gap:10px}.slots{padding:4px 14px 12px}.slot p{font-size:16px}.rulecard p{font-size:14.5px}.rulecard{padding:12px 13px}.link{display:none}.dcard h3{font-size:15px}}
+@media (min-width:480px) and (max-width:640px){.grid{grid-template-columns:repeat(3,1fr)}}
 @media print{nav.top,.filters{display:none}.wrap{padding:0}.grid{grid-template-columns:repeat(4,1fr);gap:8px}.dcard{page-break-inside:avoid}.link{display:none}a{color:inherit;text-decoration:none}}
 </style></head><body>
-<nav class="top"><a href="index.html">Home</a><a href="london.html" class="on">London</a><a href="outfits.html">Outfits</a></nav>
+<nav class="top"><a href="index.html">Home</a><a href="london.html" class="on">London</a><a href="outfits.html">Bridesmaids Looks</a></nav>
 <header class="crest"><a class="name" href="index.html">#TangGang</a></header>
 <main class="wrap narrow">
 <div class="pagehead">
   <div class="kicker">London &middot; Wed 13 &ndash; Mon 18 January 2027 &middot; Ham Yard Hotel, Soho</div>
   <h1>London, in January</h1>
-  <p class="lede">Five nights, four of you, built around what January actually allows: light from about 8:00 to 4:20, so the outdoor things happen early and the city takes over after dark. No sit-down lunches or breakfasts &mdash; grab something on the move and spend the daylight on the good stuff.</p>
+  <p class="lede">Five nights, four of you, built around what January actually allows: light from about 8:00 to 4:20, so the outdoor things happen early and the city takes over after dark. Lunch and breakfast spots TBD &mdash; work in progress.</p>
   <div class="cats"><span class="cat">Shopping</span><span class="cat">Art</span><span class="cat">Sculpture</span><span class="cat">Bars</span><span class="cat">Two fancy dinners</span><span class="cat">Spa</span><span class="cat">Two day trips</span></div>
 </div>
 
@@ -123,8 +129,9 @@ tr:last-child td{border-bottom:0}
 <p class="maphint">Centred on Ham Yard. Every stop below is named exactly as it appears in Google Maps — search it, or use the saved list.</p></section>
 
 <h2>Day by day</h2>
+<div class="jump"><a href="#wed">Wed</a><a href="#thu">Thu</a><a href="#fri">Fri</a><a href="#sat">Sat</a><a href="#sun">Sun</a><a href="#mon">Mon</a><a href="#flights">Flights</a><a href="#book">What to book</a></div>
 
-<article class="day">
+<article class="day" id="wed">
   <div class="dayhead"><span class="daytag" style="background:var(--wed)">Wed 13</span><h3>Land, shop, then the spa</h3><span class="theme">Arrival day for three &middot; everyone in by early afternoon</span></div>
   <div class="slots">
     <div class="slot"><span class="t">10:00</span><p><b>You land</b> (T5); Elizabeth line to Tottenham Court Road, five minutes' walk to Ham Yard. Drop bags. Gainey flies tonight and joins tomorrow.</p></div>
@@ -136,7 +143,7 @@ tr:last-child td{border-bottom:0}
   </div>
 </article>
 
-<article class="day">
+<article class="day" id="thu">
   <div class="dayhead"><span class="daytag" style="background:var(--thu)">Thu 14</span><h3>The Heath, Kenwood, then Henry Moore at Kew</h3><span class="theme">Sculpture all day &middot; Gainey arrives &middot; fancy dinner no. 1</span></div>
   <div class="slots">
     <div class="slot"><span class="t">08:30</span><p><span class="n" style="background:var(--thu)">6</span><b>Parliament Hill</b> &mdash; a proper climb and the best view of London, then straight across the Heath. Wear boots; the Heath in January is mud.</p></div>
@@ -151,7 +158,7 @@ tr:last-child td{border-bottom:0}
   </div>
 </article>
 
-<article class="day">
+<article class="day" id="fri">
   <div class="dayhead"><span class="daytag" style="background:var(--fri)">Fri 15</span><h3>Cambridge, then Spitalfields and Marylebone</h3><span class="theme">Day trip no. 1 &middot; 50 minutes each way &middot; the sceney dinner</span></div>
   <div class="slots">
     <div class="slot"><span class="t">09:30</span><p><span class="n" style="background:var(--fri)">11</span>Fast train from <b>King's Cross to Cambridge</b>, about 50 minutes.</p></div>
@@ -163,7 +170,7 @@ tr:last-child td{border-bottom:0}
   </div>
 </article>
 
-<article class="day">
+<article class="day" id="sat">
   <div class="dayhead"><span class="daytag" style="background:var(--sat)">Sat 16</span><h3>The Cotswolds and Bath, then the blowout</h3><span class="theme">Day trip no. 2 &middot; villages, Georgian crescents, a hot spring on a roof &middot; fancy dinner no. 2</span></div>
   <div class="slots">
     <div class="slot"><span class="t">07:30</span><p><span class="n" style="background:var(--sat)">27</span>GWR from <b>Paddington to Bath Spa</b>, about 1h20 (Piccadilly or Bakerloo line from the hotel, 15 minutes). <span class="book">Advance tickets go on sale ~12 weeks out &mdash; late October &mdash; and are a third of the walk-up fare.</span> Coffee on the train.</p></div>
@@ -176,7 +183,7 @@ tr:last-child td{border-bottom:0}
   </div>
 </article>
 
-<article class="day">
+<article class="day" id="sun">
   <div class="dayhead"><span class="daytag" style="background:var(--sun)">Sun 17</span><h3>Flowers, the Tates, concrete, a roast</h3><span class="theme">The London art day &middot; slow last night</span></div>
   <div class="slots">
     <div class="slot"><span class="t">09:00</span><p><span class="n" style="background:var(--sun)">18</span><b>Columbia Road Flower Market</b>, Sundays only, 8&ndash;3. The little shops along the street open too.<span class="tag">Shopping</span></p></div>
@@ -190,7 +197,7 @@ tr:last-child td{border-bottom:0}
   </div>
 </article>
 
-<article class="day">
+<article class="day" id="mon">
   <div class="dayhead"><span class="daytag" style="background:var(--home)">Mon 18</span><h3>Out</h3><span class="theme">MLK Day &middot; checkout noon</span></div>
   <div class="slots">
     <div class="slot"><span class="t">09:00</span><p>Gainey leaves for her <b>13:30</b>. If anyone wants one more pass at <b>Liberty</b> or <b>DSM</b> in the sales, both are two minutes away and open at 10.</p></div>
@@ -209,7 +216,7 @@ tr:last-child td{border-bottom:0}
 <h2>Further out &mdash; up to three hours</h2>
 <p class="lede" style="margin-bottom:12px">Every realistic day trip, ranked by how long it actually takes to get there. Two are now in the plan &mdash; <b>Cambridge on Friday</b> and <b>Bath + the Cotswolds on Saturday</b>. The rest are swaps, or a solo day while the others take it slow in Soho.</p>
 <div class="cgrid" style="margin-top:14px">
-  <div class="card" style="border-color:var(--sat)"><h4>Bath + Castle Combe + Lacock &mdash; in the plan, Saturday</h4><div class="meta">1h19 from Paddington &middot; villages + spa + architecture</div>
+  <div class="card plan"><h4>Bath + Castle Combe + Lacock &mdash; in the plan, Saturday</h4><div class="meta">1h19 from Paddington &middot; villages + spa + architecture</div>
     <p><b>Thermae Bath Spa</b> has an <b>open-air rooftop pool of naturally hot spring water</b> looking over the abbey &mdash; steaming in January air, which is the whole point. Open daily 9:00&ndash;21:30, over-16s, book a slot.</p>
     <p>Around it: the <b>Royal Crescent</b> and <b>the Circus</b>, the Roman Baths, and good shopping on Milsom Street. The Cotswolds proper (Bibury, Stow, Bourton) are a separate 1h30 train to Moreton-in-Marsh and don't combine with Bath in a day; <b>Castle Combe and Lacock</b> are the Cotswold villages that do, 25 minutes from Bath station.</p></div>
   <div class="card"><h4>Yorkshire Sculpture Park</h4><div class="meta">~2h20 door to door &middot; the big sculpture day</div>
@@ -228,7 +235,7 @@ tr:last-child td{border-bottom:0}
 
 
 
-<h2>Flights &mdash; booked</h2>
+<h2 id="flights">Flights &mdash; booked</h2>
 <div class="tbl"><table>
   <tr><th>Who</th><th>Out</th><th>Back</th><th>Ref</th></tr>
   <tr><td><b>Semi + Sheila</b></td><td><b>BA284</b> SFO Tue 12 Jan 17:25 &rarr; LHR Wed 11:50 (T5)</td><td><b>BA287</b> LHR Mon 18 Jan 15:20 &rarr; SFO 18:45</td><td>booked</td></tr>
@@ -237,7 +244,7 @@ tr:last-child td{border-bottom:0}
 </table></div>
 <p class="foot" style="margin-top:8px">Everyone needs a <b>UK ETA</b> (£20, the "UK ETA" app) before boarding. Add passport details in Manage My Booking before check-in. Hotel: Ham Yard, Wed 13 &ndash; Mon 18, connecting rooms, free cancellation until noon GMT Fri 8 Jan.</p>
 
-<h2>What to book, and when</h2>
+<h2 id="book">What to book, and when</h2>
 <div class="tbl"><table>
   <tr><th>What</th><th>For</th><th>When &middot; how</th></tr>
   <tr><td><b>nina</b> &mdash; the sceney dinner</td><td>Fri 15, 20:30, 4</td><td><b>Dorsia</b>, ~30 days out &middot; reminder set Dec 15</td></tr>
@@ -259,6 +266,5 @@ tr:last-child td{border-bottom:0}
 <p class="foot" style="margin-top:8px"><b>Dua Lipa's list, for reference:</b> Fonda (Mayfair, Mexican), Ida (Queen's Park, Italian), Urchin (Japanese), Canteen (Notting Hill deli), Quality Chop House (Farringdon steak), Mountain (Soho, vermouth on tap &mdash; three minutes from the hotel, walk in for a pre-dinner drink), The Lore of the Land (Fitzrovia pub, Thursday), The Hero (Maida Vale pub, if you're nearby).</p>
 <p class="foot"><b>Henry Moore Studios &amp; Gardens</b> is only an hour away but closed until 1 April, and St Ives is 5h+ each way. Train times are fastest scheduled services; check the actual January timetable and watch for weekend engineering works. Hours are as currently published; recheck everything in December. Sources: <a href="https://www.corinthia.com/en-gb/london/spa-at-corinthia-london/">Corinthia spa</a>, <a href="https://luxurylondon.co.uk/wellbeing/beauty/best-spas-and-spa-days-in-london/">Luxury London spa guide</a>, <a href="https://thenudge.com/sessions-arts-club/">Sessions Arts Club</a>, <a href="https://www.thegoodfoodguide.co.uk/restaurant/dorian/id/59242">Dorian</a>, <a href="https://www.hot-dinners.com/Features/Hot-Dinners-recommends/hot-right-now-london-s-hottest-restaurants">Hot Dinners</a>, <a href="https://www.kettlesyard.cam.ac.uk/plan-your-visit/">Kettle's Yard</a>, <a href="https://www.english-heritage.org.uk/visit/places/kenwood/">Kenwood</a>, <a href="https://www.thermaebathspa.com/opening-times">Thermae Bath Spa</a>, <a href="https://www.gwr.com/stations-and-destinations/popular-routes/london-to-bath">GWR to Bath</a>, <a href="https://henry-moore.org/whats-on/henry-moore-monumental-nature/">Henry Moore: Monumental Nature at Kew</a>, <a href="https://www.kew.org/kew-gardens/visit-kew-gardens/opening-and-closing-times">Kew hours</a>, <a href="https://www.bathinsidertours.co.uk/lacock-and-castle-combe-tour">Bath Insider Tours</a>, <a href="https://www.hauserwirth.com/locations/10068-hauser-wirth-somerset/">Hauser &amp; Wirth Somerset</a>, <a href="https://ysp.org.uk/visit">YSP</a>.</p>
 </main>
-<footer class="site"><b>#TangGang</b> · a private page for the bridesmaids. Hours, prices and links were right when captured — recheck before you book or buy.</footer>
 <script></script>
 </body></html>
